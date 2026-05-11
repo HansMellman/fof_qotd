@@ -8,59 +8,112 @@
   </head>
   <body>
     <header class="site-header">
+      <div class="brand-mark" aria-hidden="true">◇</div>
       <div>
-        <p class="eyebrow">Front Office Football 8</p>
-        <h1>Quote of the Day Archive</h1>
+        <p class="eyebrow">Film Room</p>
+        <h1>Front Office Football 8 Quote of the Day Archive</h1>
       </div>
     </header>
 
-    <main>
-      <section class="controls" aria-label="Archive filters">
-        <label class="field search-field">
-          <span>Search</span>
-          <input id="searchInput" type="search" placeholder="Search quotes, authors, dates, notes">
-        </label>
+    <main class="site-layout">
+      <aside class="left-sidebar">
+        <section class="controls" aria-label="Archive filters">
+          <h2>Filters</h2>
 
-        <label class="field">
-          <span>Month</span>
-          <select id="monthFilter">
-            <option value="">All months</option>
-          </select>
-        </label>
+          <label class="field search-field">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="Search quotes, authors, dates, notes">
+          </label>
 
-        <label class="check-field">
-          <input id="specialToggle" type="checkbox">
-          <span>Include special quotes</span>
-        </label>
+          <label class="field">
+            <span>Month</span>
+            <select id="monthFilter">
+              <option value="">All months</option>
+            </select>
+          </label>
 
-        <div class="button-row">
-          <button id="todayButton" type="button">Today's quote</button>
-          <button id="randomButton" type="button">Random quote</button>
-          <button id="clearButton" type="button">Clear filters</button>
-        </div>
+          <label class="field">
+            <span>Author</span>
+            <select id="authorFilter">
+              <option value="">All authors</option>
+            </select>
+          </label>
+
+          <label class="check-field">
+            <input id="specialToggle" type="checkbox">
+            <span>Include special quotes</span>
+          </label>
+
+          <div class="button-row">
+            <button id="todayButton" type="button">Today's quote</button>
+            <button id="randomButton" type="button">Random quote</button>
+            <button id="clearButton" type="button">Clear filters</button>
+          </div>
+        </section>
+
+        <section class="about-panel" aria-label="About the archive">
+          <h2>About the Archive</h2>
+          <p>A searchable collection of daily football wisdom from Front Office Football 8.</p>
+          <p><span id="archiveCount">0</span> quotes loaded from the reviewed archive.</p>
+        </section>
+      </aside>
+
+      <section class="main-content">
+        <section class="today-section" aria-label="Today's Quote">
+          <p class="section-kicker">Today's Quote</p>
+          <article id="todayQuoteCard" class="today-card">
+            <div class="pin" aria-hidden="true"></div>
+            <p id="todayQuoteDate" class="today-date">Loading...</p>
+            <blockquote id="todayQuoteText">Loading quotes...</blockquote>
+            <p id="todayQuoteAuthor" class="today-author"></p>
+            <div class="today-actions">
+              <button id="todayCopyButton" type="button">Copy quote</button>
+              <button id="todayScreenshotButton" type="button">View screenshot</button>
+            </div>
+          </article>
+        </section>
+
+        <section class="results-bar" aria-live="polite">
+          <h2>All Quotes</h2>
+          <span id="resultCount">Loading quotes...</span>
+        </section>
+
+        <section id="quoteGrid" class="quote-grid" aria-label="Quote results"></section>
       </section>
 
-      <section class="results-bar" aria-live="polite">
-        <span id="resultCount">Loading quotes...</span>
-      </section>
-
-      <section id="quoteGrid" class="quote-grid" aria-label="Quote results"></section>
+      <aside class="right-sidebar" aria-label="Author index">
+        <section class="author-index">
+          <h2>Author Index</h2>
+          <div id="authorList" class="author-list"></div>
+        </section>
+      </aside>
     </main>
 
     <template id="quoteCardTemplate">
       <article class="quote-card">
+        <div class="clip" aria-hidden="true"></div>
         <div class="quote-meta">
           <h2></h2>
           <span class="badge" hidden></span>
         </div>
         <blockquote></blockquote>
         <p class="author" hidden></p>
-        <img alt="">
         <div class="card-actions">
           <button class="copy-button" type="button">Copy quote</button>
+          <button class="screenshot-button" type="button">View screenshot</button>
         </div>
       </article>
     </template>
+
+    <div id="screenshotModal" class="modal" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button id="modalCloseButton" class="modal-close" type="button" aria-label="Close screenshot">Close</button>
+        <h2 id="modalTitle">Original Screenshot</h2>
+        <p id="modalSubtitle"></p>
+        <img id="modalImage" alt="">
+      </section>
+    </div>
 
     <script src="app.js"></script>
   </body>

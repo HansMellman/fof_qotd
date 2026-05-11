@@ -2,6 +2,7 @@ const DATA_URL = "data/quotes.json";
 
 const searchInput = document.querySelector("#searchInput");
 const monthFilter = document.querySelector("#monthFilter");
+const authorFilter = document.querySelector("#authorFilter");
 const specialToggle = document.querySelector("#specialToggle");
 const todayButton = document.querySelector("#todayButton");
 const randomButton = document.querySelector("#randomButton");
@@ -9,8 +10,21 @@ const clearButton = document.querySelector("#clearButton");
 const resultCount = document.querySelector("#resultCount");
 const quoteGrid = document.querySelector("#quoteGrid");
 const template = document.querySelector("#quoteCardTemplate");
+const authorList = document.querySelector("#authorList");
+const archiveCount = document.querySelector("#archiveCount");
+const todayQuoteDate = document.querySelector("#todayQuoteDate");
+const todayQuoteText = document.querySelector("#todayQuoteText");
+const todayQuoteAuthor = document.querySelector("#todayQuoteAuthor");
+const todayCopyButton = document.querySelector("#todayCopyButton");
+const todayScreenshotButton = document.querySelector("#todayScreenshotButton");
+const screenshotModal = document.querySelector("#screenshotModal");
+const modalCloseButton = document.querySelector("#modalCloseButton");
+const modalTitle = document.querySelector("#modalTitle");
+const modalSubtitle = document.querySelector("#modalSubtitle");
+const modalImage = document.querySelector("#modalImage");
 
 let quotes = [];
+let currentTodayQuote = null;
 
 function normalizeText(value) {
   return String(value || "").toLowerCase();
@@ -34,6 +48,7 @@ function matchesSearch(quote, searchTerm) {
 function shouldShowQuote(quote) {
   const searchTerm = normalizeText(searchInput.value.trim());
   const selectedMonth = monthFilter.value;
+  const selectedAuthor = authorFilter.value;
   const includeSpecials = specialToggle.checked;
 
   if (!includeSpecials && !quote.include_in_default_archive) {
@@ -41,6 +56,10 @@ function shouldShowQuote(quote) {
   }
 
   if (selectedMonth && String(quote.month_number) !== selectedMonth) {
+    return false;
+  }
+
+  if (selectedAuthor && quote.author !== selectedAuthor) {
     return false;
   }
 
@@ -71,6 +90,49 @@ async function copyQuote(quote, button) {
   }, 1400);
 }
 
+function getTodayQuote() {
+  const today = new Date();
+  const dateKey = `${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+  return quotes.find((quote) => quote.date_key === dateKey && quote.include_in_default_archive) || quotes[0] || null;
+}
+
+function renderTodayQuote(quote) {
+  currentTodayQuote = quote;
+
+  if (!quote) {
+    todayQuoteDate.textContent = "No quote loaded";
+    todayQuoteText.textContent = "Could not load the archive.";
+    todayQuoteAuthor.textContent = "";
+    todayCopyButton.disabled = true;
+    todayScreenshotButton.disabled = true;
+    return;
+  }
+
+  todayQuoteDate.textContent = quote.date_label;
+  todayQuoteText.textContent = quote.text || "[Needs review]";
+  todayQuoteAuthor.textContent = quote.author ? `- ${quote.author}` : "";
+  todayCopyButton.disabled = false;
+  todayScreenshotButton.disabled = !quote.image_path;
+}
+
+function openScreenshotModal(quote) {
+  if (!quote || !quote.image_path) {
+    return;
+  }
+
+  modalTitle.textContent = quote.date_label;
+  modalSubtitle.textContent = quote.author || "Original screenshot";
+  modalImage.src = quote.image_path;
+  modalImage.alt = `Original screenshot for ${quote.date_label}`;
+  screenshotModal.hidden = false;
+  modalCloseButton.focus();
+}
+
+function closeScreenshotModal() {
+  screenshotModal.hidden = true;
+  modalImage.removeAttribute("src");
+}
+
 function renderQuotes(visibleQuotes) {
   quoteGrid.replaceChildren();
   resultCount.textContent = `${visibleQuotes.length} result${visibleQuotes.length === 1 ? "" : "s"}`;
@@ -92,8 +154,8 @@ function renderQuotes(visibleQuotes) {
     const badge = card.querySelector(".badge");
     const blockquote = card.querySelector("blockquote");
     const author = card.querySelector(".author");
-    const image = card.querySelector("img");
     const copyButton = card.querySelector(".copy-button");
+    const screenshotButton = card.querySelector(".screenshot-button");
 
     title.textContent = quote.date_label;
     blockquote.textContent = quote.text || "[Needs review]";
@@ -108,21 +170,21 @@ function renderQuotes(visibleQuotes) {
       author.textContent = quote.author;
     }
 
-    if (quote.image_path) {
-      image.src = quote.image_path;
-      image.alt = `Original screenshot for ${quote.date_label}`;
-    } else {
-      image.remove();
-    }
-
     copyButton.addEventListener("click", () => copyQuote(quote, copyButton));
+    if (quote.image_path) {
+      screenshotButton.addEventListener("click", () => openScreenshotModal(quote));
+    } else {
+      screenshotButton.disabled = true;
+    }
     article.dataset.quoteId = quote.id;
     quoteGrid.append(card);
   }
 }
 
 function updateResults() {
-  renderQuotes(getFilteredQuotes());
+  const visibleQuotes = getFilteredQuotes();
+  renderQuotes(visibleQuotes);
+  renderAuthorIndex();
 }
 
 function populateMonthFilter() {
@@ -140,15 +202,69 @@ function populateMonthFilter() {
   }
 }
 
+function populateAuthorFilter() {
+  const authorCounts = getAuthorCounts();
+  for (const [author, count] of authorCounts) {
+    if (!author) {
+      continue;
+    }
+    const option = document.createElement("option");
+    option.value = author;
+    option.textContent = `${author} (${count})`;
+    authorFilter.append(option);
+  }
+}
+
+function getAuthorCounts() {
+  const counts = new Map();
+  for (const quote of quotes) {
+    const author = quote.author || "";
+    counts.set(author, (counts.get(author) || 0) + 1);
+  }
+  return [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+}
+
+function renderAuthorIndex() {
+  authorList.replaceChildren();
+
+  const allButton = document.createElement("button");
+  allButton.type = "button";
+  allButton.className = `author-button${authorFilter.value === "" ? " active" : ""}`;
+  allButton.innerHTML = `<span>All Authors</span><span class="author-count">${quotes.length}</span>`;
+  allButton.addEventListener("click", () => {
+    authorFilter.value = "";
+    updateResults();
+  });
+  authorList.append(allButton);
+
+  for (const [author, count] of getAuthorCounts()) {
+    if (!author) {
+      continue;
+    }
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `author-button${authorFilter.value === author ? " active" : ""}`;
+    button.innerHTML = `<span></span><span class="author-count">${count}</span>`;
+    button.querySelector("span").textContent = author;
+    button.addEventListener("click", () => {
+      authorFilter.value = author;
+      updateResults();
+    });
+    authorList.append(button);
+  }
+}
+
 function showTodayQuote() {
-  const today = new Date();
-  const dateKey = `${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
   searchInput.value = "";
   monthFilter.value = "";
+  authorFilter.value = "";
+  specialToggle.checked = false;
 
-  const todayQuote = quotes.find((quote) => quote.date_key === dateKey && quote.include_in_default_archive);
+  const todayQuote = getTodayQuote();
+  renderTodayQuote(todayQuote);
   if (todayQuote) {
     renderQuotes([todayQuote]);
+    resultCount.textContent = "1 result";
   } else {
     resultCount.textContent = "0 results";
     quoteGrid.replaceChildren();
@@ -167,12 +283,15 @@ function showRandomQuote() {
   }
 
   const quote = pool[Math.floor(Math.random() * pool.length)];
+  renderTodayQuote(quote);
   renderQuotes([quote]);
+  resultCount.textContent = "1 result";
 }
 
 function clearFilters() {
   searchInput.value = "";
   monthFilter.value = "";
+  authorFilter.value = "";
   specialToggle.checked = false;
   updateResults();
 }
@@ -184,9 +303,13 @@ async function loadQuotes() {
       throw new Error(`HTTP ${response.status}`);
     }
     quotes = await response.json();
+    archiveCount.textContent = String(quotes.length);
     populateMonthFilter();
+    populateAuthorFilter();
+    renderTodayQuote(getTodayQuote());
     updateResults();
   } catch (error) {
+    renderTodayQuote(null);
     resultCount.textContent = "Could not load quotes";
     quoteGrid.replaceChildren();
     const message = document.createElement("p");
@@ -198,9 +321,23 @@ async function loadQuotes() {
 
 searchInput.addEventListener("input", updateResults);
 monthFilter.addEventListener("change", updateResults);
+authorFilter.addEventListener("change", updateResults);
 specialToggle.addEventListener("change", updateResults);
 todayButton.addEventListener("click", showTodayQuote);
 randomButton.addEventListener("click", showRandomQuote);
 clearButton.addEventListener("click", clearFilters);
+todayCopyButton.addEventListener("click", () => copyQuote(currentTodayQuote, todayCopyButton));
+todayScreenshotButton.addEventListener("click", () => openScreenshotModal(currentTodayQuote));
+modalCloseButton.addEventListener("click", closeScreenshotModal);
+screenshotModal.addEventListener("click", (event) => {
+  if (event.target.hasAttribute("data-close-modal")) {
+    closeScreenshotModal();
+  }
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !screenshotModal.hidden) {
+    closeScreenshotModal();
+  }
+});
 
 loadQuotes();
