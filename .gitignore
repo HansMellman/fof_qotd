@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Temporary/review files
+/data/review.html
+/data/quotes_raw.csv
+/data/quotes_raw_v2.csv
+/data/quotes_raw_v2_excel_edited_backup.csv
+/data/quotes_clean_before_final_text_fixes.csv
+/data/quotes_clean_before_known_fixes.csv
+/data/quotes_clean_merged_fixed_report.txt
+/data/quotes_clean_text_author_only_fixed.csv
+
+# Keep final clean data
+!data/quotes_clean.csv
+!data/quotes.json
+!site/data/quotes.json

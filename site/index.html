@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FOF8 Quote of the Day Archive</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Front Office Football 8</p>
+        <h1>Quote of the Day Archive</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls" aria-label="Archive filters">
+        <label class="field search-field">
+          <span>Search</span>
+          <input id="searchInput" type="search" placeholder="Search quotes, authors, dates, notes">
+        </label>
+
+        <label class="field">
+          <span>Month</span>
+          <select id="monthFilter">
+            <option value="">All months</option>
+          </select>
+        </label>
+
+        <label class="check-field">
+          <input id="specialToggle" type="checkbox">
+          <span>Include special quotes</span>
+        </label>
+
+        <div class="button-row">
+          <button id="todayButton" type="button">Today's quote</button>
+          <button id="randomButton" type="button">Random quote</button>
+          <button id="clearButton" type="button">Clear filters</button>
+        </div>
+      </section>
+
+      <section class="results-bar" aria-live="polite">
+        <span id="resultCount">Loading quotes...</span>
+      </section>
+
+      <section id="quoteGrid" class="quote-grid" aria-label="Quote results"></section>
+    </main>
+
+    <template id="quoteCardTemplate">
+      <article class="quote-card">
+        <div class="quote-meta">
+          <h2></h2>
+          <span class="badge" hidden></span>
+        </div>
+        <blockquote></blockquote>
+        <p class="author" hidden></p>
+        <img alt="">
+        <div class="card-actions">
+          <button class="copy-button" type="button">Copy quote</button>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
