@@ -201,7 +201,13 @@ select {
   border-radius: 4px;
   background: #060a0c;
   color: var(--site-ink);
-  padding: 10px 11px;
+  padding: 10px 9px;
+  font-size: 0.94rem;
+}
+
+input[type="search"]::placeholder {
+  color: rgba(232, 226, 212, 0.58);
+  font-size: 0.9rem;
 }
 
 .check-field {
@@ -223,7 +229,7 @@ select {
 
 .today-section {
   position: relative;
-  min-height: clamp(360px, 34vw, 460px);
+  min-height: clamp(320px, 30vw, 430px);
   border: 1px solid var(--line);
   background:
     linear-gradient(90deg, transparent 49.6%, rgba(255, 255, 255, 0.16) 50%, transparent 50.4%),
@@ -231,7 +237,7 @@ select {
     radial-gradient(circle at 35% 45%, rgba(255, 255, 255, 0.07), transparent 32%),
     #11191d;
   background-size: 100% 100%, 100% 54px, auto, auto;
-  padding: clamp(22px, 2.6vw, 36px);
+  padding: clamp(18px, 2.1vw, 30px);
   overflow: hidden;
   box-shadow: var(--shadow);
 }
@@ -266,7 +272,7 @@ select {
 .section-kicker {
   position: relative;
   z-index: 1;
-  margin: 0 0 18px;
+  margin: 0 0 14px;
   color: var(--gold);
   font-weight: 900;
   text-align: center;
@@ -289,9 +295,9 @@ select {
   z-index: 1;
   width: min(1050px, 92%);
   max-width: 1050px;
-  min-height: clamp(250px, 22vw, 320px);
+  min-height: clamp(220px, 19vw, 292px);
   margin: 0 auto;
-  padding: clamp(34px, 4vw, 54px) clamp(28px, 5vw, 78px) clamp(26px, 3vw, 42px);
+  padding: clamp(28px, 3.2vw, 46px) clamp(26px, 4.5vw, 72px) clamp(22px, 2.5vw, 34px);
   transform: rotate(-0.4deg);
 }
 
@@ -331,7 +337,7 @@ blockquote {
 }
 
 .today-card blockquote {
-  margin-top: 26px;
+  margin-top: clamp(18px, 2vw, 24px);
   font-size: clamp(1.65rem, 2.45vw, 2.45rem);
   line-height: 1.36;
 }
@@ -351,7 +357,7 @@ blockquote {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 .results-bar {
@@ -383,7 +389,7 @@ blockquote {
   display: flex;
   flex-direction: column;
   min-height: 260px;
-  padding: 26px 22px 20px;
+  padding: 28px 22px 20px;
 }
 
 .quote-card:nth-child(3n + 2) {
@@ -413,11 +419,13 @@ blockquote {
 
 .quote-card blockquote {
   font-size: 1.06rem;
+  margin-top: 18px;
+  margin-bottom: 16px;
 }
 
 .quote-card .card-actions {
   margin-top: auto;
-  padding-top: 8px;
+  padding-top: 12px;
 }
 
 .quote-card button,
@@ -440,7 +448,7 @@ blockquote {
 
 .author-list {
   display: grid;
-  gap: 4px;
+  gap: 5px;
   max-height: calc(100vh - 158px);
   overflow: auto;
   padding-right: 4px;
@@ -451,13 +459,14 @@ blockquote {
   justify-content: space-between;
   gap: 10px;
   width: 100%;
-  min-height: 38px;
+  min-height: 40px;
   border: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0;
   background: transparent;
   color: var(--site-ink);
-  padding: 8px 8px;
+  padding: 9px 9px;
+  line-height: 1.25;
   box-shadow: none;
   text-align: left;
   text-transform: none;
