@@ -17,7 +17,7 @@
   --teal-dark: #1d7972;
   --rust: #a8462b;
   --shadow: 0 18px 44px rgba(0, 0, 0, 0.42);
-  --shell-width: min(1560px, calc(100vw - 48px));
+  --shell-width: min(1900px, calc(100vw - 48px));
 }
 
 * {
@@ -89,7 +89,7 @@ select:focus-visible {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent),
     rgba(8, 12, 14, 0.96);
-  padding: 14px max(24px, calc((100vw - 1560px) / 2 + 24px));
+  padding: 14px max(24px, calc((100vw - 1900px) / 2 + 24px));
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.32);
 }
 
@@ -127,10 +127,10 @@ h1 {
 
 .site-layout {
   display: grid;
-  grid-template-columns: minmax(250px, 280px) minmax(0, 1fr) minmax(250px, 280px);
-  gap: 18px;
+  grid-template-columns: minmax(260px, 300px) minmax(0, 1fr) minmax(260px, 300px);
+  gap: 20px;
   width: var(--shell-width);
-  max-width: 1560px;
+  max-width: 1900px;
   margin: 0 auto;
   padding: 18px 0 32px;
 }
@@ -287,8 +287,8 @@ select {
 
 .today-card {
   z-index: 1;
-  width: min(880px, 92%);
-  max-width: 880px;
+  width: min(1050px, 92%);
+  max-width: 1050px;
   min-height: clamp(250px, 22vw, 320px);
   margin: 0 auto;
   padding: clamp(34px, 4vw, 54px) clamp(28px, 5vw, 78px) clamp(26px, 3vw, 42px);
@@ -537,6 +537,21 @@ blockquote {
   height: auto;
   border: 1px solid var(--line);
   background: #000;
+}
+
+@media (min-width: 1700px) {
+  .site-layout {
+    gap: 22px;
+  }
+
+  .today-section {
+    min-height: 500px;
+    padding-top: 40px;
+  }
+
+  .quote-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
 @media (max-width: 1200px) {
