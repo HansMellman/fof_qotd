@@ -229,7 +229,10 @@ input[type="search"]::placeholder {
 
 .today-section {
   position: relative;
-  min-height: clamp(320px, 30vw, 430px);
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  align-items: center;
+  min-height: clamp(430px, 31vw, 540px);
   border: 1px solid var(--line);
   background:
     linear-gradient(90deg, transparent 49.6%, rgba(255, 255, 255, 0.16) 50%, transparent 50.4%),
@@ -272,6 +275,7 @@ input[type="search"]::placeholder {
 .section-kicker {
   position: relative;
   z-index: 1;
+  align-self: start;
   margin: 0 0 14px;
   color: var(--gold);
   font-weight: 900;
@@ -293,9 +297,13 @@ input[type="search"]::placeholder {
 
 .today-card {
   z-index: 1;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: min(1050px, 92%);
   max-width: 1050px;
-  min-height: clamp(220px, 19vw, 292px);
+  min-height: clamp(270px, 20vw, 340px);
   margin: 0 auto;
   padding: clamp(28px, 3.2vw, 46px) clamp(26px, 4.5vw, 72px) clamp(22px, 2.5vw, 34px);
   transform: rotate(-0.4deg);
@@ -338,7 +346,7 @@ blockquote {
 
 .today-card blockquote {
   margin-top: clamp(18px, 2vw, 24px);
-  font-size: clamp(1.65rem, 2.45vw, 2.45rem);
+  font-size: clamp(1.45rem, 2vw, 2.2rem);
   line-height: 1.36;
 }
 
@@ -357,7 +365,7 @@ blockquote {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 18px;
+  margin-top: clamp(16px, 2vw, 22px);
 }
 
 .results-bar {
@@ -665,14 +673,33 @@ blockquote {
   text-align: center;
 }
 
+@media (min-width: 901px) {
+  .today-section {
+    height: clamp(500px, 36vw, 640px);
+  }
+
+  .today-card {
+    max-height: calc(100% - 54px);
+    overflow: hidden;
+  }
+
+  .today-card blockquote {
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: clamp(150px, 18vw, 280px);
+    overflow-y: auto;
+    padding-right: 8px;
+  }
+}
+
 @media (min-width: 1700px) {
   .site-layout {
     gap: 22px;
   }
 
   .today-section {
-    min-height: 500px;
-    padding-top: 40px;
+    min-height: 560px;
+    padding-top: 38px;
   }
 
   .quote-grid {
@@ -734,7 +761,8 @@ blockquote {
   }
 
   .today-section {
-    min-height: auto;
+    height: clamp(420px, 54vw, 500px);
+    min-height: clamp(420px, 54vw, 500px);
   }
 
   .today-card,
@@ -744,6 +772,15 @@ blockquote {
 
   .today-card {
     width: min(760px, 96%);
+    min-height: clamp(240px, 32vw, 310px);
+    max-height: calc(100% - 48px);
+    overflow: hidden;
+  }
+
+  .today-card blockquote {
+    max-height: clamp(120px, 24vw, 190px);
+    overflow-y: auto;
+    padding-right: 6px;
   }
 
   .authors-toolbar {
@@ -776,16 +813,21 @@ blockquote {
   }
 
   .today-section {
+    height: clamp(500px, 125vw, 560px);
+    min-height: clamp(500px, 125vw, 560px);
     padding: 18px 12px;
   }
 
   .today-card {
     width: 100%;
+    min-height: clamp(210px, 56vw, 280px);
+    max-height: calc(100% - 42px);
     padding: 30px 18px 22px;
   }
 
   .today-card blockquote {
     font-size: 1.35rem;
+    max-height: clamp(92px, 34vw, 150px);
   }
 
   .quote-grid {
@@ -801,6 +843,12 @@ blockquote {
   .today-actions button,
   .card-actions button {
     width: 100%;
+  }
+
+  .today-actions button {
+    flex: 1 1 calc(50% - 6px);
+    min-width: 0;
+    width: auto;
   }
 
   .results-bar {
