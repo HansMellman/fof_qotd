@@ -440,6 +440,14 @@ blockquote {
   color: var(--teal);
 }
 
+.hero-nav-button {
+  color: var(--gold-light);
+}
+
+.hero-nav-button[hidden] {
+  display: none;
+}
+
 .author-index {
   position: sticky;
   top: 12px;

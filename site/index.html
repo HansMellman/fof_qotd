@@ -60,13 +60,15 @@
 
       <section class="main-content">
         <section class="today-section" aria-label="Today's Quote">
-          <p class="section-kicker">Today's Quote</p>
+          <p id="heroLabel" class="section-kicker">Today's Quote</p>
           <article id="todayQuoteCard" class="today-card">
             <div class="pin" aria-hidden="true"></div>
             <p id="todayQuoteDate" class="today-date">Loading...</p>
             <blockquote id="todayQuoteText">Loading quotes...</blockquote>
             <p id="todayQuoteAuthor" class="today-author"></p>
             <div class="today-actions">
+              <button id="heroPreviousButton" class="hero-nav-button" type="button">Previous</button>
+              <button id="heroNextButton" class="hero-nav-button" type="button">Next</button>
               <button id="todayCopyButton" type="button">Copy quote</button>
               <button id="todayScreenshotButton" type="button">View screenshot</button>
             </div>
