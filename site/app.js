@@ -1,4 +1,5 @@
 const DATA_URL = "data/quotes.json";
+const AUTHORS_URL = "data/authors.json";
 
 const searchInput = document.querySelector("#searchInput");
 const monthFilter = document.querySelector("#monthFilter");
@@ -25,8 +26,30 @@ const modalCloseButton = document.querySelector("#modalCloseButton");
 const modalTitle = document.querySelector("#modalTitle");
 const modalSubtitle = document.querySelector("#modalSubtitle");
 const modalImage = document.querySelector("#modalImage");
+const aboutAuthorsButton = document.querySelector("#aboutAuthorsButton");
+const authorsModal = document.querySelector("#authorsModal");
+const authorsCloseButton = document.querySelector("#authorsCloseButton");
+const authorMetadataSearch = document.querySelector("#authorMetadataSearch");
+const authorTypeFilter = document.querySelector("#authorTypeFilter");
+const authorMetadataCount = document.querySelector("#authorMetadataCount");
+const authorMetadataGrid = document.querySelector("#authorMetadataGrid");
+
+const AUTHOR_TYPE_LABELS = {
+  real_football_person: "Real Football People",
+  literary_character: "Literary Characters",
+  real_historical_person: "Historical / Public Figures",
+  film_or_pop_culture_character: "Film / Pop Culture",
+  fof_universe_fictional: "FOF Universe Fictional",
+  developer: "Developer / Meta",
+  writer: "Writers",
+  philosopher: "Philosophers",
+  musician: "Musicians",
+  unknown: "Unknown",
+};
 
 let quotes = [];
+let authors = [];
+let authorsLoadError = "";
 let currentHeroQuote = null;
 let heroPool = [];
 let heroIndex = 0;
@@ -162,6 +185,26 @@ function formatSpecialLabel(specialType) {
   return specialType.replaceAll("_", " ");
 }
 
+function getAuthorTypeLabel(authorType) {
+  if (!authorType) {
+    return "Unclassified";
+  }
+  return AUTHOR_TYPE_LABELS[authorType] || authorType.replaceAll("_", " ");
+}
+
+function getAuthorSearchText(author) {
+  return [
+    author.display_name,
+    author.full_author,
+    author.author_type,
+    author.source_title,
+    author.source_creator,
+    author.fof_role,
+    author.short_note,
+    Array.isArray(author.tags) ? author.tags.join(" ") : "",
+  ].map(normalizeText).join(" ");
+}
+
 function getHeroAuthorLabel(author) {
   let label = author || "Unknown Author";
   label = label.replace(/\([^)]*\)/g, "").trim();
@@ -288,6 +331,159 @@ function openScreenshotModal(quote) {
 function closeScreenshotModal() {
   screenshotModal.hidden = true;
   modalImage.removeAttribute("src");
+}
+
+function populateAuthorTypeFilter() {
+  const selectedValue = authorTypeFilter.value;
+  authorTypeFilter.replaceChildren();
+
+  const defaultOption = document.createElement("option");
+  defaultOption.value = "";
+  defaultOption.textContent = "All author types";
+  authorTypeFilter.append(defaultOption);
+
+  const authorTypes = [...new Set(authors.map((author) => author.author_type).filter(Boolean))]
+    .sort((a, b) => getAuthorTypeLabel(a).localeCompare(getAuthorTypeLabel(b)));
+
+  for (const authorType of authorTypes) {
+    const option = document.createElement("option");
+    option.value = authorType;
+    option.textContent = getAuthorTypeLabel(authorType);
+    authorTypeFilter.append(option);
+  }
+
+  if ([...authorTypeFilter.options].some((option) => option.value === selectedValue)) {
+    authorTypeFilter.value = selectedValue;
+  }
+}
+
+function getFilteredAuthors() {
+  const searchTerm = normalizeText(authorMetadataSearch.value.trim());
+  const selectedType = authorTypeFilter.value;
+
+  return authors.filter((author) => {
+    if (selectedType && author.author_type !== selectedType) {
+      return false;
+    }
+    if (!searchTerm) {
+      return true;
+    }
+    return getAuthorSearchText(author).includes(searchTerm);
+  });
+}
+
+function renderAuthorMetadataCards() {
+  authorMetadataGrid.replaceChildren();
+
+  if (authorsLoadError) {
+    authorMetadataCount.textContent = "Author metadata unavailable";
+    const message = document.createElement("p");
+    message.className = "author-metadata-empty";
+    message.textContent = authorsLoadError;
+    authorMetadataGrid.append(message);
+    return;
+  }
+
+  const visibleAuthors = getFilteredAuthors();
+  authorMetadataCount.textContent = `${visibleAuthors.length} author${visibleAuthors.length === 1 ? "" : "s"}`;
+
+  if (visibleAuthors.length === 0) {
+    const message = document.createElement("p");
+    message.className = "author-metadata-empty";
+    message.textContent = "No authors match the current filters.";
+    authorMetadataGrid.append(message);
+    return;
+  }
+
+  for (const author of visibleAuthors) {
+    const card = document.createElement("article");
+    card.className = "author-metadata-card";
+
+    const title = document.createElement("h3");
+    title.textContent = author.display_name || author.full_author;
+    card.append(title);
+
+    const typeLine = document.createElement("p");
+    typeLine.className = "author-type-line";
+    typeLine.textContent = `${getAuthorTypeLabel(author.author_type)} · ${author.quote_count} quote${author.quote_count === 1 ? "" : "s"}`;
+    card.append(typeLine);
+
+    const details = document.createElement("dl");
+    details.className = "author-detail-list";
+    const detailItems = [
+      ["Source", author.source_title],
+      ["Creator", author.source_creator],
+      ["FOF role", author.fof_role],
+    ];
+
+    for (const [label, value] of detailItems) {
+      if (!value) {
+        continue;
+      }
+      const wrapper = document.createElement("div");
+      const term = document.createElement("dt");
+      const description = document.createElement("dd");
+      term.textContent = `${label}: `;
+      description.textContent = value;
+      wrapper.append(term, description);
+      details.append(wrapper);
+    }
+    if (details.children.length > 0) {
+      card.append(details);
+    }
+
+    if (author.short_note) {
+      const note = document.createElement("p");
+      note.textContent = author.short_note;
+      card.append(note);
+    }
+
+    if (Array.isArray(author.tags) && author.tags.length > 0) {
+      const tags = document.createElement("div");
+      tags.className = "author-tag-list";
+      for (const tagText of author.tags) {
+        const tag = document.createElement("span");
+        tag.className = "author-tag";
+        tag.textContent = tagText;
+        tags.append(tag);
+      }
+      card.append(tags);
+    }
+
+    const actions = document.createElement("div");
+    actions.className = "author-card-actions";
+    const viewQuotesButton = document.createElement("button");
+    viewQuotesButton.type = "button";
+    viewQuotesButton.textContent = "View Quotes";
+    viewQuotesButton.addEventListener("click", () => viewQuotesForAuthor(author.full_author));
+    actions.append(viewQuotesButton);
+    card.append(actions);
+
+    authorMetadataGrid.append(card);
+  }
+}
+
+function openAuthorsModal() {
+  authorsModal.hidden = false;
+  renderAuthorMetadataCards();
+  authorMetadataSearch.focus();
+}
+
+function closeAuthorsModal() {
+  authorsModal.hidden = true;
+}
+
+function viewQuotesForAuthor(fullAuthor) {
+  closeAuthorsModal();
+  searchInput.value = "";
+  monthFilter.value = "";
+  if (!getAvailableAuthors("").has(fullAuthor)) {
+    specialToggle.checked = true;
+  }
+  updateFilterOptions();
+  authorFilter.value = fullAuthor;
+  updateResults();
+  document.querySelector(".main-content").scrollIntoView({ block: "start" });
 }
 
 function renderQuotes(visibleQuotes) {
@@ -419,6 +615,25 @@ async function loadQuotes() {
   }
 }
 
+async function loadAuthors() {
+  try {
+    const response = await fetch(AUTHORS_URL);
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+    authors = await response.json();
+    authors.sort((a, b) => String(a.display_name).localeCompare(String(b.display_name)));
+    authorsLoadError = "";
+    populateAuthorTypeFilter();
+    renderAuthorMetadataCards();
+  } catch (error) {
+    authors = [];
+    authorsLoadError = "Could not load site/data/authors.json. The quote archive still works, but author notes are unavailable.";
+    populateAuthorTypeFilter();
+    renderAuthorMetadataCards();
+  }
+}
+
 searchInput.addEventListener("input", updateResults);
 monthFilter.addEventListener("change", updateResults);
 authorFilter.addEventListener("change", updateResults);
@@ -430,16 +645,32 @@ heroPreviousButton.addEventListener("click", previousHeroQuote);
 heroNextButton.addEventListener("click", nextHeroQuote);
 todayCopyButton.addEventListener("click", () => copyQuote(currentHeroQuote, todayCopyButton));
 todayScreenshotButton.addEventListener("click", () => openScreenshotModal(currentHeroQuote));
+aboutAuthorsButton.addEventListener("click", openAuthorsModal);
+authorsCloseButton.addEventListener("click", closeAuthorsModal);
+authorMetadataSearch.addEventListener("input", renderAuthorMetadataCards);
+authorTypeFilter.addEventListener("change", renderAuthorMetadataCards);
 modalCloseButton.addEventListener("click", closeScreenshotModal);
 screenshotModal.addEventListener("click", (event) => {
   if (event.target.hasAttribute("data-close-modal")) {
     closeScreenshotModal();
   }
 });
+authorsModal.addEventListener("click", (event) => {
+  if (event.target.hasAttribute("data-close-authors")) {
+    closeAuthorsModal();
+  }
+});
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && !screenshotModal.hidden) {
+  if (event.key !== "Escape") {
+    return;
+  }
+  if (!screenshotModal.hidden) {
     closeScreenshotModal();
+  }
+  if (!authorsModal.hidden) {
+    closeAuthorsModal();
   }
 });
 
 loadQuotes();
+loadAuthors();
