@@ -23,15 +23,17 @@
     "display_name": "Al Davis",
     "full_author": "Al Davis",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Hall of Fame owner",
+    "tags": [
+      "executive"
+    ],
     "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "needs_research": false,
+    "research_notes": "true"
   },
   {
     "author_key": "albert-einstein",
@@ -72,15 +74,17 @@
     "display_name": "Andrew Luck",
     "full_author": "Andrew Luck",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Former Indianapolis Colts quarterback",
+    "tags": [
+      "first overall pick in the 2012 NFL Draft"
+    ],
     "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "needs_research": false,
+    "research_notes": "true"
   },
   {
     "author_key": "anthony-patch-coach-washington-landslides",
@@ -106,15 +110,17 @@
     "display_name": "Barry Sanders",
     "full_author": "Barry Sanders",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Hall of Fame running back for the Detroit Lions",
+    "tags": [
+      "widely regarded as one of football's most elusive runners.\""
+    ],
     "verified": false,
     "needs_research": true,
-    "research_notes": ""
+    "research_notes": "false"
   },
   {
     "author_key": "benj-steinberg-coach-baltimore-nightwings",
@@ -136,90 +142,112 @@
     "display_name": "Bert Bell",
     "full_author": "Bert Bell",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Hall of Fame football executive and former NFL commissioner",
+    "tags": [
+      "also associated with the Eagles and Steelers.\""
+    ],
     "verified": false,
     "needs_research": true,
-    "research_notes": ""
+    "research_notes": "false"
   },
   {
     "author_key": "bill-belichick",
     "display_name": "Bill Belichick",
     "full_author": "Bill Belichick",
     "quote_count": 4,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Longtime football coach best known for leading the New England Patriots dynasty and winning six Super Bowls as head coach.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "coach"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "bill-polian",
     "display_name": "Bill Polian",
     "full_author": "Bill Polian",
     "quote_count": 2,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Hall of Fame football executive who built successful teams with the Bills",
+    "tags": [
+      "Panthers"
+    ],
     "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "needs_research": false,
+    "research_notes": "true"
   },
   {
     "author_key": "bill-walsh",
     "display_name": "Bill Walsh",
     "full_author": "Bill Walsh",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Hall of Fame coach of the San Francisco 49ers and a defining figure in the development of the West Coast offense.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "coach",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "bum-phillips",
     "display_name": "Bum Phillips",
     "full_author": "Bum Phillips",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Former NFL head coach best known for leading the Houston Oilers during the Luv Ya Blue era.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "coach"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "cam-newton",
     "display_name": "Cam Newton",
     "full_author": "Cam Newton",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Former NFL quarterback and 2015 league MVP",
+    "tags": [
+      "best known for his years with the Carolina Panthers.\""
+    ],
     "verified": false,
     "needs_research": true,
-    "research_notes": ""
+    "research_notes": "false"
   },
   {
     "author_key": "cass-timberlane-gm-cincinnati-tigers",
@@ -245,15 +273,21 @@
     "display_name": "Chuck Noll",
     "full_author": "Chuck Noll",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Hall of Fame coach who led the Pittsburgh Steelers to four Super Bowl championships.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "coach",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "clyde-griffiths-coach-new-york-gladiators",
@@ -328,15 +362,21 @@
     "display_name": "Don Shula",
     "full_author": "Don Shula",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Hall of Fame head coach and the NFL's all-time leader in coaching wins.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "coach",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "donald-kenyon-hill-poet-laureate-of-football",
@@ -377,15 +417,17 @@
     "display_name": "Drew Bledsoe",
     "full_author": "Drew Bledsoe",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Former NFL quarterback and first overall pick in the 1993 NFL Draft",
+    "tags": [
+      "best known for his time with the Patriots.\""
+    ],
     "verified": false,
     "needs_research": true,
-    "research_notes": ""
+    "research_notes": "false"
   },
   {
     "author_key": "eleanor-roosevelt",
@@ -407,15 +449,17 @@
     "display_name": "Ernie Accorsi",
     "full_author": "Ernie Accorsi",
     "quote_count": 5,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Longtime NFL executive and general manager",
+    "tags": [
+      "best known for front-office roles with the Giants"
+    ],
     "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "needs_research": false,
+    "research_notes": "football;real;nfl;executive;general-manager"
   },
   {
     "author_key": "eugene-witla-coach-jacksonville-cougars",
@@ -456,15 +500,21 @@
     "display_name": "Fran Tarkenton",
     "full_author": "Fran Tarkenton",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Hall of Fame quarterback known for his scrambling style and long career with the Vikings and Giants.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "quarterback",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "frank-cowperwood-coach-detroit-mocats",
@@ -490,15 +540,22 @@
     "display_name": "Frank Gifford",
     "full_author": "Frank Gifford",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Hall of Fame New York Giants player who later became a prominent football broadcaster.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "player",
+      "broadcaster",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "fred-trumper-san-diego-lightning",
@@ -588,15 +645,17 @@
     "display_name": "George Halas",
     "full_author": "George Halas",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Hall of Fame founder",
+    "tags": [
+      "owner"
+    ],
     "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "needs_research": false,
+    "research_notes": "football;real;nfl;coach;owner;founder;hall-of-fame"
   },
   {
     "author_key": "george-m-gilbert",
@@ -667,15 +726,17 @@
     "display_name": "Greg Schiano",
     "full_author": "Greg Schiano",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "Football",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Football coach with experience in college football and the NFL",
+    "tags": [
+      "including Rutgers and the Tampa Bay Buccaneers.\""
+    ],
     "verified": false,
     "needs_research": true,
-    "research_notes": ""
+    "research_notes": "false"
   },
   {
     "author_key": "h-g-bissinger",
@@ -761,15 +822,20 @@
     "display_name": "Jake Delhomme",
     "full_author": "Jake Delhomme",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Former NFL quarterback best known for leading the Carolina Panthers to Super Bowl XXXVIII.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "quarterback"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "james-otto",
@@ -806,15 +872,17 @@
     "display_name": "Jerry Rice",
     "full_author": "Jerry Rice",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Hall of Fame wide receiver",
+    "tags": [
+      "three-time Super Bowl champion"
+    ],
     "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "needs_research": false,
+    "research_notes": "true"
   },
   {
     "author_key": "jim-gindin",
@@ -881,30 +949,38 @@
     "display_name": "John Elway",
     "full_author": "John Elway",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Hall of Fame quarterback and two-time Super Bowl winner with the Denver Broncos.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "quarterback",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "john-madden",
     "display_name": "John Madden",
     "full_author": "John Madden",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Hall of Fame coach",
+    "tags": [
+      "broadcaster"
+    ],
     "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "needs_research": false,
+    "research_notes": "true"
   },
   {
     "author_key": "john-mcenroe",
@@ -945,30 +1021,38 @@
     "display_name": "Junior Seau",
     "full_author": "Junior Seau",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Hall of Fame linebacker known for his long NFL career and outstanding play with the San Diego Chargers.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "linebacker",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "ken-stabler",
     "display_name": "Ken Stabler",
     "full_author": "Ken Stabler",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Hall of Fame quarterback",
+    "tags": [
+      "nicknamed Snake"
+    ],
     "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "needs_research": false,
+    "research_notes": "true"
   },
   {
     "author_key": "kenny-chesney",
@@ -990,15 +1074,21 @@
     "display_name": "Kevin Colbert",
     "full_author": "Kevin Colbert",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Longtime NFL executive best known for his front-office work with the Pittsburgh Steelers.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "executive",
+      "general-manager"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "kurt-vonnegut",
@@ -1020,15 +1110,20 @@
     "display_name": "Lou Holtz",
     "full_author": "Lou Holtz",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "College football",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Longtime college football coach best known for leading Notre Dame to a national championship.\"",
+    "tags": [
+      "football",
+      "real",
+      "college-football",
+      "coach"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "louis-holland-philadelphia-condors",
@@ -1065,15 +1160,17 @@
     "display_name": "Mario Williams",
     "full_author": "Mario Williams",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Former NFL defensive end",
+    "tags": [
+      "first overall pick in the 2006 NFL Draft"
+    ],
     "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "needs_research": false,
+    "research_notes": "true"
   },
   {
     "author_key": "mark-twain",
@@ -1095,30 +1192,43 @@
     "display_name": "Marv Levy",
     "full_author": "Marv Levy",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Hall of Fame head coach best known for leading the Buffalo Bills to four consecutive Super Bowl appearances.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "coach",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "mike-ditka",
     "display_name": "Mike Ditka",
     "full_author": "Mike Ditka",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Hall of Fame tight end and Super Bowl-winning head coach of the Chicago Bears.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "player",
+      "coach",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "milt-dagget-gm-new-orleans-delta-rays",
@@ -1140,15 +1250,17 @@
     "display_name": "Ndamukong Suh",
     "full_author": "Ndamukong Suh",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Former NFL defensive tackle",
+    "tags": [
+      "five-time Pro Bowler"
+    ],
     "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "needs_research": false,
+    "research_notes": "true"
   },
   {
     "author_key": "nick-carraway-coach-buffalo-snow-riders",
@@ -1174,15 +1286,17 @@
     "display_name": "Ozzie Newsome",
     "full_author": "Ozzie Newsome",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Hall of Fame tight end and influential NFL executive",
+    "tags": [
+      "best known for his playing career with Cleveland and front-office work in Baltimore.\""
+    ],
     "verified": false,
     "needs_research": true,
-    "research_notes": ""
+    "research_notes": "false"
   },
   {
     "author_key": "patrick-wallingford-past-league-commissioner",
@@ -1204,30 +1318,43 @@
     "display_name": "Paul Brown",
     "full_author": "Paul Brown",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Hall of Fame coach and football innovator associated with the Cleveland Browns and Cincinnati Bengals.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "coach",
+      "innovator",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "pete-carroll",
     "display_name": "Pete Carroll",
     "full_author": "Pete Carroll",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "Football",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Longtime football coach best known for successful runs with USC and the Seattle Seahawks.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "college-football",
+      "coach"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "pete-weber",
@@ -1249,15 +1376,17 @@
     "display_name": "Peyton Manning",
     "full_author": "Peyton Manning",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Hall of Fame quarterback",
+    "tags": [
+      "five-time NFL MVP"
+    ],
     "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "needs_research": false,
+    "research_notes": "true"
   },
   {
     "author_key": "plato",
@@ -1294,15 +1423,21 @@
     "display_name": "Ray Lewis",
     "full_author": "Ray Lewis",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Hall of Fame linebacker and two-time Super Bowl champion with the Baltimore Ravens.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "linebacker",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "red-smith",
@@ -1339,45 +1474,55 @@
     "display_name": "Ron Jaworski",
     "full_author": "Ron Jaworski",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Former NFL quarterback and longtime football analyst.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "quarterback",
+      "analyst"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "sam-wyche",
     "display_name": "Sam Wyche",
     "full_author": "Sam Wyche",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Former NFL quarterback and head coach",
+    "tags": [
+      "best known for coaching the Cincinnati Bengals.\""
+    ],
     "verified": false,
     "needs_research": true,
-    "research_notes": ""
+    "research_notes": "false"
   },
   {
     "author_key": "scott-pioli",
     "display_name": "Scott Pioli",
     "full_author": "Scott Pioli",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"NFL front-office executive known for personnel roles with the Patriots",
+    "tags": [
+      "Chiefs"
+    ],
     "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "needs_research": false,
+    "research_notes": "true"
   },
   {
     "author_key": "sun-tzu",
@@ -1399,90 +1544,122 @@
     "display_name": "Ted Thompson",
     "full_author": "Ted Thompson",
     "quote_count": 3,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"NFL executive and general manager best known for building Green Bay Packers teams including the Super Bowl XLV champions.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "executive",
+      "general-manager"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "terry-bradshaw",
     "display_name": "Terry Bradshaw",
     "full_author": "Terry Bradshaw",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Hall of Fame quarterback who won four Super Bowls with the Pittsburgh Steelers.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "quarterback",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "tom-brady",
     "display_name": "Tom Brady",
     "full_author": "Tom Brady",
     "quote_count": 3,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
+    "short_note": "\"Quarterback widely regarded as one of the greatest players in NFL history",
+    "tags": [
+      "with seven Super Bowl victories.\""
+    ],
     "verified": false,
     "needs_research": true,
-    "research_notes": ""
+    "research_notes": "false"
   },
   {
     "author_key": "tony-dungy",
     "display_name": "Tony Dungy",
     "full_author": "Tony Dungy",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Hall of Fame coach who led the Indianapolis Colts to a Super Bowl championship.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "coach",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "troy-polamalu",
     "display_name": "Troy Polamalu",
     "full_author": "Troy Polamalu",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Hall of Fame safety and two-time Super Bowl champion with the Pittsburgh Steelers.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "safety",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "vince-lombardi",
     "display_name": "Vince Lombardi",
     "full_author": "Vince Lombardi",
     "quote_count": 3,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "\"Hall of Fame coach and Green Bay Packers icon whose name is attached to the Super Bowl trophy.\"",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "coach",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "will-kennicott-coach-dallas-lone-stars",
