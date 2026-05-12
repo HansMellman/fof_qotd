@@ -7,6 +7,7 @@ const authorFilter = document.querySelector("#authorFilter");
 const specialToggle = document.querySelector("#specialToggle");
 const todayButton = document.querySelector("#todayButton");
 const randomButton = document.querySelector("#randomButton");
+const quizButton = document.querySelector("#quizButton");
 const clearButton = document.querySelector("#clearButton");
 const resultCount = document.querySelector("#resultCount");
 const quoteGrid = document.querySelector("#quoteGrid");
@@ -33,6 +34,18 @@ const authorMetadataSearch = document.querySelector("#authorMetadataSearch");
 const authorTypeFilter = document.querySelector("#authorTypeFilter");
 const authorMetadataCount = document.querySelector("#authorMetadataCount");
 const authorMetadataGrid = document.querySelector("#authorMetadataGrid");
+const quizModal = document.querySelector("#quizModal");
+const quizCloseButton = document.querySelector("#quizCloseButton");
+const quizScore = document.querySelector("#quizScore");
+const quizStreak = document.querySelector("#quizStreak");
+const quizBestStreakLabel = document.querySelector("#quizBestStreak");
+const quizStatus = document.querySelector("#quizStatus");
+const quizDate = document.querySelector("#quizDate");
+const quizQuoteText = document.querySelector("#quizQuoteText");
+const quizChoices = document.querySelector("#quizChoices");
+const quizFeedback = document.querySelector("#quizFeedback");
+const quizNextButton = document.querySelector("#quizNextButton");
+const quizRestartButton = document.querySelector("#quizRestartButton");
 
 const AUTHOR_TYPE_LABELS = {
   real_football_person: "Real Football People",
@@ -54,6 +67,13 @@ let currentHeroQuote = null;
 let heroPool = [];
 let heroIndex = 0;
 let heroMode = "today";
+let quizCurrentQuote = null;
+let quizPreviousQuoteId = "";
+let quizAnswered = false;
+let quizCorrectCount = 0;
+let quizAnsweredCount = 0;
+let quizCurrentStreak = 0;
+let quizBestStreak = 0;
 
 function normalizeText(value) {
   return String(value || "").toLowerCase();
@@ -190,6 +210,22 @@ function getAuthorTypeLabel(authorType) {
     return "Unclassified";
   }
   return AUTHOR_TYPE_LABELS[authorType] || authorType.replaceAll("_", " ");
+}
+
+function getAuthorDisplayName(fullAuthor) {
+  const metadata = getAuthorMetadata(fullAuthor);
+  if (metadata && metadata.display_name) {
+    return metadata.display_name;
+  }
+
+  let displayName = fullAuthor || "Unknown Author";
+  displayName = displayName.replace(/\([^)]*\)/g, "").trim();
+  displayName = displayName.split(",")[0].trim();
+  return displayName || fullAuthor || "Unknown Author";
+}
+
+function getAuthorMetadata(fullAuthor) {
+  return authors.find((author) => author.full_author === fullAuthor) || null;
 }
 
 function getAuthorSearchText(author) {
@@ -486,6 +522,206 @@ function viewQuotesForAuthor(fullAuthor) {
   document.querySelector(".main-content").scrollIntoView({ block: "start" });
 }
 
+function shuffleArray(items) {
+  const shuffled = [...items];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+  return shuffled;
+}
+
+function getQuizQuotePool() {
+  return getBasePool().filter((quote) => quote.author && quote.text);
+}
+
+function getQuizAuthorPool() {
+  const authorsByName = new Map();
+  for (const quote of getQuizQuotePool()) {
+    if (quote.author) {
+      authorsByName.set(quote.author, quote.author);
+    }
+  }
+  return [...authorsByName.keys()];
+}
+
+function updateQuizScore() {
+  quizScore.textContent = `Score: ${quizCorrectCount} / ${quizAnsweredCount}`;
+  quizStreak.textContent = `Streak: ${quizCurrentStreak}`;
+  quizBestStreakLabel.textContent = `Best: ${quizBestStreak}`;
+}
+
+function setQuizMessage(message) {
+  quizDate.textContent = "";
+  quizQuoteText.textContent = message;
+  quizChoices.replaceChildren();
+  quizFeedback.replaceChildren();
+  quizNextButton.disabled = true;
+}
+
+function buildAnswerChoices(quote, authorPool) {
+  const distractors = shuffleArray(authorPool.filter((author) => author !== quote.author)).slice(0, 3);
+  return shuffleArray([quote.author, ...distractors]);
+}
+
+function buildQuizQuestion() {
+  updateQuizScore();
+  quizStatus.textContent = "";
+  quizFeedback.replaceChildren();
+  quizChoices.replaceChildren();
+  quizAnswered = false;
+  quizNextButton.disabled = true;
+
+  if (quotes.length === 0) {
+    setQuizMessage("Quote data is not loaded yet. Try again after the archive finishes loading.");
+    return;
+  }
+
+  const pool = getQuizQuotePool();
+  if (pool.length === 0) {
+    setQuizMessage("No quiz quotes are available for the current special quote setting.");
+    return;
+  }
+
+  const authorPool = getQuizAuthorPool();
+  if (authorPool.length < 4) {
+    setQuizMessage("The quiz needs at least four available authors to build answer choices.");
+    return;
+  }
+
+  let questionPool = pool;
+  if (pool.length > 1 && quizPreviousQuoteId) {
+    questionPool = pool.filter((quote) => quote.id !== quizPreviousQuoteId);
+  }
+
+  quizCurrentQuote = questionPool[Math.floor(Math.random() * questionPool.length)];
+  quizPreviousQuoteId = quizCurrentQuote.id;
+  quizDate.textContent = quizCurrentQuote.date_label || "";
+  quizQuoteText.textContent = quizCurrentQuote.text || "[Needs review]";
+
+  for (const author of buildAnswerChoices(quizCurrentQuote, authorPool)) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "quiz-choice-button";
+    button.textContent = getAuthorDisplayName(author);
+    button.dataset.author = author;
+    button.addEventListener("click", () => handleQuizAnswer(author));
+    quizChoices.append(button);
+  }
+}
+
+function renderQuizFeedback(selectedAuthor, isCorrect) {
+  quizFeedback.replaceChildren();
+
+  const result = document.createElement("p");
+  result.className = isCorrect ? "quiz-result correct" : "quiz-result incorrect";
+  result.textContent = isCorrect ? "Correct!" : "Not quite.";
+  quizFeedback.append(result);
+
+  const answer = document.createElement("p");
+  answer.textContent = isCorrect
+    ? `That was ${quizCurrentQuote.author}.`
+    : `Correct answer: ${quizCurrentQuote.author}.`;
+  quizFeedback.append(answer);
+
+  if (!isCorrect) {
+    const selected = document.createElement("p");
+    selected.textContent = `Your answer: ${selectedAuthor}.`;
+    quizFeedback.append(selected);
+  }
+
+  const metadata = getAuthorMetadata(quizCurrentQuote.author);
+  if (!metadata) {
+    return;
+  }
+
+  const details = document.createElement("dl");
+  details.className = "quiz-author-details";
+  const detailItems = [
+    ["Type", getAuthorTypeLabel(metadata.author_type)],
+    ["Source", metadata.source_title],
+    ["Creator", metadata.source_creator],
+    ["FOF role", metadata.fof_role],
+  ];
+
+  for (const [label, value] of detailItems) {
+    if (!value) {
+      continue;
+    }
+    const wrapper = document.createElement("div");
+    const term = document.createElement("dt");
+    const description = document.createElement("dd");
+    term.textContent = `${label}: `;
+    description.textContent = value;
+    wrapper.append(term, description);
+    details.append(wrapper);
+  }
+
+  if (details.children.length > 0) {
+    quizFeedback.append(details);
+  }
+
+  if (metadata.short_note) {
+    const note = document.createElement("p");
+    note.className = "quiz-author-note";
+    note.textContent = metadata.short_note;
+    quizFeedback.append(note);
+  }
+}
+
+function handleQuizAnswer(selectedAuthor) {
+  if (quizAnswered || !quizCurrentQuote) {
+    return;
+  }
+
+  quizAnswered = true;
+  quizAnsweredCount += 1;
+  const isCorrect = selectedAuthor === quizCurrentQuote.author;
+
+  if (isCorrect) {
+    quizCorrectCount += 1;
+    quizCurrentStreak += 1;
+    quizBestStreak = Math.max(quizBestStreak, quizCurrentStreak);
+  } else {
+    quizCurrentStreak = 0;
+  }
+
+  for (const button of quizChoices.querySelectorAll("button")) {
+    button.disabled = true;
+    if (button.dataset.author === quizCurrentQuote.author) {
+      button.classList.add("correct");
+      button.setAttribute("aria-label", `${button.textContent}, correct answer`);
+    } else if (button.dataset.author === selectedAuthor) {
+      button.classList.add("incorrect");
+      button.setAttribute("aria-label", `${button.textContent}, your answer`);
+    }
+  }
+
+  renderQuizFeedback(selectedAuthor, isCorrect);
+  updateQuizScore();
+  quizNextButton.disabled = false;
+  quizNextButton.focus();
+}
+
+function resetQuiz() {
+  quizCorrectCount = 0;
+  quizAnsweredCount = 0;
+  quizCurrentStreak = 0;
+  quizBestStreak = 0;
+  quizPreviousQuoteId = "";
+  buildQuizQuestion();
+}
+
+function openQuizModal() {
+  quizModal.hidden = false;
+  resetQuiz();
+  quizCloseButton.focus();
+}
+
+function closeQuizModal() {
+  quizModal.hidden = true;
+}
+
 function renderQuotes(visibleQuotes) {
   quoteGrid.replaceChildren();
   resultCount.textContent = `${visibleQuotes.length} result${visibleQuotes.length === 1 ? "" : "s"}`;
@@ -640,6 +876,7 @@ authorFilter.addEventListener("change", updateResults);
 specialToggle.addEventListener("change", updateResults);
 todayButton.addEventListener("click", showTodayQuote);
 randomButton.addEventListener("click", showRandomQuote);
+quizButton.addEventListener("click", openQuizModal);
 clearButton.addEventListener("click", clearFilters);
 heroPreviousButton.addEventListener("click", previousHeroQuote);
 heroNextButton.addEventListener("click", nextHeroQuote);
@@ -647,6 +884,9 @@ todayCopyButton.addEventListener("click", () => copyQuote(currentHeroQuote, toda
 todayScreenshotButton.addEventListener("click", () => openScreenshotModal(currentHeroQuote));
 aboutAuthorsButton.addEventListener("click", openAuthorsModal);
 authorsCloseButton.addEventListener("click", closeAuthorsModal);
+quizCloseButton.addEventListener("click", closeQuizModal);
+quizNextButton.addEventListener("click", buildQuizQuestion);
+quizRestartButton.addEventListener("click", resetQuiz);
 authorMetadataSearch.addEventListener("input", renderAuthorMetadataCards);
 authorTypeFilter.addEventListener("change", renderAuthorMetadataCards);
 modalCloseButton.addEventListener("click", closeScreenshotModal);
@@ -660,6 +900,11 @@ authorsModal.addEventListener("click", (event) => {
     closeAuthorsModal();
   }
 });
+quizModal.addEventListener("click", (event) => {
+  if (event.target.hasAttribute("data-close-quiz")) {
+    closeQuizModal();
+  }
+});
 document.addEventListener("keydown", (event) => {
   if (event.key !== "Escape") {
     return;
@@ -669,6 +914,9 @@ document.addEventListener("keydown", (event) => {
   }
   if (!authorsModal.hidden) {
     closeAuthorsModal();
+  }
+  if (!quizModal.hidden) {
+    closeQuizModal();
   }
 });
 

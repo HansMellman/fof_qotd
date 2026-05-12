@@ -47,6 +47,7 @@
           <div class="button-row">
             <button id="todayButton" type="button">Today's quote</button>
             <button id="randomButton" type="button">Random quote</button>
+            <button id="quizButton" type="button">Who Said It?</button>
             <button id="clearButton" type="button">Clear filters</button>
           </div>
         </section>
@@ -141,6 +142,36 @@
 
         <p id="authorMetadataCount" class="author-metadata-count" aria-live="polite">Loading authors...</p>
         <div id="authorMetadataGrid" class="author-metadata-grid"></div>
+      </section>
+    </div>
+
+    <div id="quizModal" class="modal" hidden>
+      <div class="modal-backdrop" data-close-quiz></div>
+      <section class="modal-dialog quiz-dialog" role="dialog" aria-modal="true" aria-labelledby="quizModalTitle">
+        <button id="quizCloseButton" class="modal-close" type="button" aria-label="Close Who Said It quiz">Close</button>
+        <p class="eyebrow">Film Room Quiz</p>
+        <h2 id="quizModalTitle">Who Said It?</h2>
+
+        <div class="quiz-scoreboard" aria-live="polite">
+          <span id="quizScore">Score: 0 / 0</span>
+          <span id="quizStreak">Streak: 0</span>
+          <span id="quizBestStreak">Best: 0</span>
+        </div>
+
+        <p id="quizStatus" class="quiz-status" aria-live="polite"></p>
+
+        <article class="quiz-card" aria-label="Quiz quote">
+          <p id="quizDate" class="today-date"></p>
+          <blockquote id="quizQuoteText">Loading quiz...</blockquote>
+        </article>
+
+        <div id="quizChoices" class="quiz-choices" aria-label="Answer choices"></div>
+        <div id="quizFeedback" class="quiz-feedback" aria-live="polite"></div>
+
+        <div class="quiz-actions">
+          <button id="quizNextButton" type="button">Next Quote</button>
+          <button id="quizRestartButton" type="button">Restart Quiz</button>
+        </div>
       </section>
     </div>
 
