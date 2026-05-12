@@ -27,13 +27,18 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame owner",
+    "short_note": "Hall of Fame owner, executive, and coach best known for his long association with the Raiders.",
     "tags": [
-      "executive"
+      "football",
+      "real",
+      "nfl",
+      "executive",
+      "coach",
+      "hall-of-fame"
     ],
-    "verified": false,
+    "verified": true,
     "needs_research": false,
-    "research_notes": "true"
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "albert-einstein",
@@ -78,13 +83,16 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Former Indianapolis Colts quarterback",
+    "short_note": "Former Indianapolis Colts quarterback, first overall pick in the 2012 NFL Draft, and four-time Pro Bowler.",
     "tags": [
-      "first overall pick in the 2012 NFL Draft"
+      "football",
+      "real",
+      "nfl",
+      "quarterback"
     ],
-    "verified": false,
+    "verified": true,
     "needs_research": false,
-    "research_notes": "true"
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "anthony-patch-coach-washington-landslides",
@@ -114,13 +122,17 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame running back for the Detroit Lions",
+    "short_note": "Hall of Fame running back for the Detroit Lions, widely regarded as one of football's most elusive runners.",
     "tags": [
-      "widely regarded as one of football's most elusive runners.\""
+      "football",
+      "real",
+      "nfl",
+      "running-back",
+      "hall-of-fame"
     ],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": "false"
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "benj-steinberg-coach-baltimore-nightwings",
@@ -146,13 +158,18 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame football executive and former NFL commissioner",
+    "short_note": "Hall of Fame football executive and former NFL commissioner, also associated with the Eagles and Steelers.",
     "tags": [
-      "also associated with the Eagles and Steelers.\""
+      "football",
+      "real",
+      "nfl",
+      "executive",
+      "commissioner",
+      "hall-of-fame"
     ],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": "false"
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "bill-belichick",
@@ -163,7 +180,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Longtime football coach best known for leading the New England Patriots dynasty and winning six Super Bowls as head coach.\"",
+    "short_note": "Longtime football coach best known for leading the New England Patriots dynasty and winning six Super Bowls as head coach.",
     "tags": [
       "football",
       "real",
@@ -183,13 +200,17 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame football executive who built successful teams with the Bills",
+    "short_note": "Hall of Fame football executive who built successful teams with the Bills, Panthers, and Colts.",
     "tags": [
-      "Panthers"
+      "football",
+      "real",
+      "nfl",
+      "executive",
+      "hall-of-fame"
     ],
-    "verified": false,
+    "verified": true,
     "needs_research": false,
-    "research_notes": "true"
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "bill-walsh",
@@ -200,7 +221,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame coach of the San Francisco 49ers and a defining figure in the development of the West Coast offense.\"",
+    "short_note": "Hall of Fame coach of the San Francisco 49ers and a defining figure in the development of the West Coast offense.",
     "tags": [
       "football",
       "real",
@@ -221,7 +242,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Former NFL head coach best known for leading the Houston Oilers during the Luv Ya Blue era.\"",
+    "short_note": "Former NFL head coach best known for leading the Houston Oilers during the Luv Ya Blue era.",
     "tags": [
       "football",
       "real",
@@ -241,13 +262,17 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Former NFL quarterback and 2015 league MVP",
+    "short_note": "Former NFL quarterback and 2015 league MVP, best known for his years with the Carolina Panthers.",
     "tags": [
-      "best known for his years with the Carolina Panthers.\""
+      "football",
+      "real",
+      "nfl",
+      "quarterback",
+      "mvp"
     ],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": "false"
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "cass-timberlane-gm-cincinnati-tigers",
@@ -277,7 +302,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame coach who led the Pittsburgh Steelers to four Super Bowl championships.\"",
+    "short_note": "Hall of Fame coach who led the Pittsburgh Steelers to four Super Bowl championships.",
     "tags": [
       "football",
       "real",
@@ -366,7 +391,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame head coach and the NFL's all-time leader in coaching wins.\"",
+    "short_note": "Hall of Fame head coach and the NFL's all-time leader in coaching wins.",
     "tags": [
       "football",
       "real",
@@ -421,13 +446,16 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Former NFL quarterback and first overall pick in the 1993 NFL Draft",
+    "short_note": "Former NFL quarterback and first overall pick in the 1993 NFL Draft, best known for his time with the Patriots.",
     "tags": [
-      "best known for his time with the Patriots.\""
+      "football",
+      "real",
+      "nfl",
+      "quarterback"
     ],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": "false"
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "eleanor-roosevelt",
@@ -453,13 +481,17 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Longtime NFL executive and general manager",
+    "short_note": "Longtime NFL executive and general manager, best known for front-office roles with the Giants, Browns, and Colts.",
     "tags": [
-      "best known for front-office roles with the Giants"
+      "football",
+      "real",
+      "nfl",
+      "executive",
+      "general-manager"
     ],
-    "verified": false,
+    "verified": true,
     "needs_research": false,
-    "research_notes": "football;real;nfl;executive;general-manager"
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "eugene-witla-coach-jacksonville-cougars",
@@ -504,7 +536,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame quarterback known for his scrambling style and long career with the Vikings and Giants.\"",
+    "short_note": "Hall of Fame quarterback known for his scrambling style and long career with the Vikings and Giants.",
     "tags": [
       "football",
       "real",
@@ -544,7 +576,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame New York Giants player who later became a prominent football broadcaster.\"",
+    "short_note": "Hall of Fame New York Giants player who later became a prominent football broadcaster.",
     "tags": [
       "football",
       "real",
@@ -649,13 +681,19 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame founder",
+    "short_note": "Hall of Fame founder, owner, player, and coach associated with the Chicago Bears and the early NFL.",
     "tags": [
-      "owner"
+      "football",
+      "real",
+      "nfl",
+      "coach",
+      "owner",
+      "founder",
+      "hall-of-fame"
     ],
-    "verified": false,
+    "verified": true,
     "needs_research": false,
-    "research_notes": "football;real;nfl;coach;owner;founder;hall-of-fame"
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "george-m-gilbert",
@@ -730,13 +768,17 @@
     "source_title": "Football",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Football coach with experience in college football and the NFL",
+    "short_note": "Football coach with experience in college football and the NFL, including Rutgers and the Tampa Bay Buccaneers.",
     "tags": [
-      "including Rutgers and the Tampa Bay Buccaneers.\""
+      "football",
+      "real",
+      "coach",
+      "college-football",
+      "nfl"
     ],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": "false"
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "h-g-bissinger",
@@ -826,7 +868,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Former NFL quarterback best known for leading the Carolina Panthers to Super Bowl XXXVIII.\"",
+    "short_note": "Former NFL quarterback best known for leading the Carolina Panthers to Super Bowl XXXVIII.",
     "tags": [
       "football",
       "real",
@@ -876,13 +918,17 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame wide receiver",
+    "short_note": "Hall of Fame wide receiver, three-time Super Bowl champion, and one of the most decorated players in NFL history.",
     "tags": [
-      "three-time Super Bowl champion"
+      "football",
+      "real",
+      "nfl",
+      "wide-receiver",
+      "hall-of-fame"
     ],
-    "verified": false,
+    "verified": true,
     "needs_research": false,
-    "research_notes": "true"
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "jim-gindin",
@@ -953,7 +999,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame quarterback and two-time Super Bowl winner with the Denver Broncos.\"",
+    "short_note": "Hall of Fame quarterback and two-time Super Bowl winner with the Denver Broncos.",
     "tags": [
       "football",
       "real",
@@ -974,13 +1020,18 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame coach",
+    "short_note": "Hall of Fame coach, broadcaster, and namesake of the Madden NFL video game series.",
     "tags": [
-      "broadcaster"
+      "football",
+      "real",
+      "nfl",
+      "coach",
+      "broadcaster",
+      "hall-of-fame"
     ],
-    "verified": false,
+    "verified": true,
     "needs_research": false,
-    "research_notes": "true"
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "john-mcenroe",
@@ -1025,7 +1076,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame linebacker known for his long NFL career and outstanding play with the San Diego Chargers.\"",
+    "short_note": "Hall of Fame linebacker known for his long NFL career and outstanding play with the San Diego Chargers.",
     "tags": [
       "football",
       "real",
@@ -1046,13 +1097,17 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame quarterback",
+    "short_note": "Hall of Fame quarterback, nicknamed Snake, best known for his years with the Oakland Raiders.",
     "tags": [
-      "nicknamed Snake"
+      "football",
+      "real",
+      "nfl",
+      "quarterback",
+      "hall-of-fame"
     ],
-    "verified": false,
+    "verified": true,
     "needs_research": false,
-    "research_notes": "true"
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "kenny-chesney",
@@ -1078,7 +1133,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Longtime NFL executive best known for his front-office work with the Pittsburgh Steelers.\"",
+    "short_note": "Longtime NFL executive best known for his front-office work with the Pittsburgh Steelers.",
     "tags": [
       "football",
       "real",
@@ -1114,7 +1169,7 @@
     "source_title": "College football",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Longtime college football coach best known for leading Notre Dame to a national championship.\"",
+    "short_note": "Longtime college football coach best known for leading Notre Dame to a national championship.",
     "tags": [
       "football",
       "real",
@@ -1164,13 +1219,16 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Former NFL defensive end",
+    "short_note": "Former NFL defensive end, first overall pick in the 2006 NFL Draft, and four-time Pro Bowler.",
     "tags": [
-      "first overall pick in the 2006 NFL Draft"
+      "football",
+      "real",
+      "nfl",
+      "defensive-end"
     ],
-    "verified": false,
+    "verified": true,
     "needs_research": false,
-    "research_notes": "true"
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "mark-twain",
@@ -1196,7 +1254,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame head coach best known for leading the Buffalo Bills to four consecutive Super Bowl appearances.\"",
+    "short_note": "Hall of Fame head coach best known for leading the Buffalo Bills to four consecutive Super Bowl appearances.",
     "tags": [
       "football",
       "real",
@@ -1217,7 +1275,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame tight end and Super Bowl-winning head coach of the Chicago Bears.\"",
+    "short_note": "Hall of Fame tight end and Super Bowl-winning head coach of the Chicago Bears.",
     "tags": [
       "football",
       "real",
@@ -1254,13 +1312,16 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Former NFL defensive tackle",
+    "short_note": "Former NFL defensive tackle, five-time Pro Bowler, and Super Bowl champion with Tampa Bay.",
     "tags": [
-      "five-time Pro Bowler"
+      "football",
+      "real",
+      "nfl",
+      "defensive-tackle"
     ],
-    "verified": false,
+    "verified": true,
     "needs_research": false,
-    "research_notes": "true"
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "nick-carraway-coach-buffalo-snow-riders",
@@ -1290,13 +1351,18 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame tight end and influential NFL executive",
+    "short_note": "Hall of Fame tight end and influential NFL executive, best known for his playing career with Cleveland and front-office work in Baltimore.",
     "tags": [
-      "best known for his playing career with Cleveland and front-office work in Baltimore.\""
+      "football",
+      "real",
+      "nfl",
+      "player",
+      "executive",
+      "hall-of-fame"
     ],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": "false"
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "patrick-wallingford-past-league-commissioner",
@@ -1322,7 +1388,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame coach and football innovator associated with the Cleveland Browns and Cincinnati Bengals.\"",
+    "short_note": "Hall of Fame coach and football innovator associated with the Cleveland Browns and Cincinnati Bengals.",
     "tags": [
       "football",
       "real",
@@ -1344,7 +1410,7 @@
     "source_title": "Football",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Longtime football coach best known for successful runs with USC and the Seattle Seahawks.\"",
+    "short_note": "Longtime football coach best known for successful runs with USC and the Seattle Seahawks.",
     "tags": [
       "football",
       "real",
@@ -1380,13 +1446,18 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame quarterback",
+    "short_note": "Hall of Fame quarterback, five-time NFL MVP, and two-time Super Bowl champion.",
     "tags": [
-      "five-time NFL MVP"
+      "football",
+      "real",
+      "nfl",
+      "quarterback",
+      "mvp",
+      "hall-of-fame"
     ],
-    "verified": false,
+    "verified": true,
     "needs_research": false,
-    "research_notes": "true"
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "plato",
@@ -1427,7 +1498,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame linebacker and two-time Super Bowl champion with the Baltimore Ravens.\"",
+    "short_note": "Hall of Fame linebacker and two-time Super Bowl champion with the Baltimore Ravens.",
     "tags": [
       "football",
       "real",
@@ -1478,7 +1549,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Former NFL quarterback and longtime football analyst.\"",
+    "short_note": "Former NFL quarterback and longtime football analyst.",
     "tags": [
       "football",
       "real",
@@ -1499,13 +1570,17 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Former NFL quarterback and head coach",
+    "short_note": "Former NFL quarterback and head coach, best known for coaching the Cincinnati Bengals.",
     "tags": [
-      "best known for coaching the Cincinnati Bengals.\""
+      "football",
+      "real",
+      "nfl",
+      "quarterback",
+      "coach"
     ],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": "false"
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "scott-pioli",
@@ -1516,13 +1591,16 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"NFL front-office executive known for personnel roles with the Patriots",
+    "short_note": "NFL front-office executive known for personnel roles with the Patriots, Chiefs, and Falcons.",
     "tags": [
-      "Chiefs"
+      "football",
+      "real",
+      "nfl",
+      "executive"
     ],
-    "verified": false,
+    "verified": true,
     "needs_research": false,
-    "research_notes": "true"
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "sun-tzu",
@@ -1548,7 +1626,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"NFL executive and general manager best known for building Green Bay Packers teams including the Super Bowl XLV champions.\"",
+    "short_note": "NFL executive and general manager best known for building Green Bay Packers teams including the Super Bowl XLV champions.",
     "tags": [
       "football",
       "real",
@@ -1569,7 +1647,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame quarterback who won four Super Bowls with the Pittsburgh Steelers.\"",
+    "short_note": "Hall of Fame quarterback who won four Super Bowls with the Pittsburgh Steelers.",
     "tags": [
       "football",
       "real",
@@ -1590,13 +1668,17 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Quarterback widely regarded as one of the greatest players in NFL history",
+    "short_note": "Quarterback widely regarded as one of the greatest players in NFL history, with seven Super Bowl victories.",
     "tags": [
-      "with seven Super Bowl victories.\""
+      "football",
+      "real",
+      "nfl",
+      "quarterback",
+      "super-bowl"
     ],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": "false"
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 2 real football metadata."
   },
   {
     "author_key": "tony-dungy",
@@ -1607,7 +1689,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame coach who led the Indianapolis Colts to a Super Bowl championship.\"",
+    "short_note": "Hall of Fame coach who led the Indianapolis Colts to a Super Bowl championship.",
     "tags": [
       "football",
       "real",
@@ -1628,7 +1710,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame safety and two-time Super Bowl champion with the Pittsburgh Steelers.\"",
+    "short_note": "Hall of Fame safety and two-time Super Bowl champion with the Pittsburgh Steelers.",
     "tags": [
       "football",
       "real",
@@ -1649,7 +1731,7 @@
     "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "\"Hall of Fame coach and Green Bay Packers icon whose name is attached to the Super Bowl trophy.\"",
+    "short_note": "Hall of Fame coach and Green Bay Packers icon whose name is attached to the Super Bowl trophy.",
     "tags": [
       "football",
       "real",
