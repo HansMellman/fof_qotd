@@ -118,6 +118,18 @@ data/quotes.json
 site/data/quotes.json
 ```
 
+## Author Metadata
+
+The author metadata workflow is separate from the quote archive data. It creates a manually reviewable metadata CSV and generated JSON for a future About Authors feature:
+
+```powershell
+python tools/build_author_metadata_template.py
+python tools/check_author_metadata.py
+python tools/build_authors_json.py
+```
+
+See `docs/AUTHOR_METADATA_WORKFLOW.md` for the full process. Do not invent author facts; use `verified=true` only after manual checking.
+
 ## Preview the Website
 
 The site is plain HTML, CSS, and JavaScript. Some browsers block `fetch()` when opening local files directly, so a tiny local server is the most reliable preview method:
