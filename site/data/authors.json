@@ -45,15 +45,21 @@
     "display_name": "Albert Einstein",
     "full_author": "Albert Einstein",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_historical_person",
+    "source_title": "Physics",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Theoretical physicist best known for relativity and winner of the 1921 Nobel Prize in Physics.",
+    "tags": [
+      "real",
+      "historical",
+      "science",
+      "physics",
+      "nobel"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "amory-blaine-miami-bay-sharks",
@@ -338,30 +344,41 @@
     "display_name": "Confucius",
     "full_author": "Confucius",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "philosopher",
+    "source_title": "Confucianism",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Ancient Chinese teacher and philosopher whose ethical and social teachings became the foundation of Confucianism.",
+    "tags": [
+      "real",
+      "historical",
+      "philosophy",
+      "china"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "dhani-jones",
     "display_name": "Dhani Jones",
     "full_author": "Dhani Jones",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Former NFL linebacker who later became known as a television host and entrepreneur.",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "linebacker",
+      "media"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "dick-diver-coach-oakland-bandits",
@@ -462,15 +479,21 @@
     "display_name": "Eleanor Roosevelt",
     "full_author": "Eleanor Roosevelt",
     "quote_count": 2,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_historical_person",
+    "source_title": "United States history",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Former First Lady of the United States and United Nations diplomat remembered for human rights work.",
+    "tags": [
+      "real",
+      "historical",
+      "politics",
+      "human-rights",
+      "united-nations"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "ernie-accorsi",
@@ -517,15 +540,20 @@
     "display_name": "F. Scott Fitzgerald",
     "full_author": "F. Scott Fitzgerald",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "writer",
+    "source_title": "American literature",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "American novelist and short-story writer closely associated with the Jazz Age and The Great Gatsby.",
+    "tags": [
+      "real",
+      "writer",
+      "literature",
+      "fitzgerald"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "fran-tarkenton",
@@ -628,30 +656,40 @@
     "display_name": "Georg Wilhelm Friedrich Hegel",
     "full_author": "Georg Wilhelm Friedrich Hegel",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "philosopher",
+    "source_title": "German idealism",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "German philosopher associated with absolute idealism and a dialectical account of history and ideas.",
+    "tags": [
+      "real",
+      "historical",
+      "philosophy",
+      "german-idealism"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "george-bernard-shaw",
     "display_name": "George Bernard Shaw",
     "full_author": "George Bernard Shaw",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "writer",
+    "source_title": "Drama",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Irish playwright and critic who won the 1925 Nobel Prize in Literature.",
+    "tags": [
+      "real",
+      "writer",
+      "playwright",
+      "nobel"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "george-f-babbitt-gm-arizona-pioneers",
@@ -734,30 +772,41 @@
     "display_name": "George Will",
     "full_author": "George Will",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "writer",
+    "source_title": "Journalism",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "American political columnist and Pulitzer Prize-winning commentator.",
+    "tags": [
+      "real",
+      "writer",
+      "journalism",
+      "commentary",
+      "pulitzer"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "grantland-rice",
     "display_name": "Grantland Rice",
     "full_author": "Grantland Rice",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "writer",
+    "source_title": "Sports journalism",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "American sportswriter and poet known as an influential sports journalist of the early twentieth century.",
+    "tags": [
+      "real",
+      "writer",
+      "sportswriter",
+      "journalism"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "greg-schiano",
@@ -785,45 +834,62 @@
     "display_name": "H.G. Bissinger",
     "full_author": "H.G. Bissinger",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "writer",
+    "source_title": "Friday Night Lights",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "American journalist and author best known for Friday Night Lights about high school football in Odessa Texas.",
+    "tags": [
+      "real",
+      "writer",
+      "journalism",
+      "football",
+      "friday-night-lights"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "heraclitus",
     "display_name": "Heraclitus",
     "full_author": "Heraclitus",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "philosopher",
+    "source_title": "Pre-Socratic philosophy",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Ancient Greek philosopher remembered for ideas about flux logos and fire as a principle of the cosmos.",
+    "tags": [
+      "real",
+      "historical",
+      "philosophy",
+      "ancient-greece"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "herman-boone-remember-the-titans",
     "display_name": "Herman Boone",
     "full_author": "Herman Boone (Remember the Titans)",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "Remember the Titans",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "High school football coach whose 1971 T. C. Williams team inspired the film Remember the Titans.",
+    "tags": [
+      "football",
+      "real",
+      "coach",
+      "film",
+      "remember-the-titans"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "homer-wells-gm-minnesota-norsemen",
@@ -884,30 +950,40 @@
     "display_name": "James Otto",
     "full_author": "James Otto",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "musician",
+    "source_title": "Country music",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "American country music singer-songwriter.",
+    "tags": [
+      "real",
+      "music",
+      "country"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata. Needs later confirmation that this is the intended James Otto reference."
   },
   {
     "author_key": "jean-paul-sartre",
     "display_name": "Jean-Paul Sartre",
     "full_author": "Jean-Paul Sartre",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "philosopher",
+    "source_title": "Existentialism",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "French philosopher playwright novelist and major figure in existentialism.",
+    "tags": [
+      "real",
+      "historical",
+      "philosophy",
+      "existentialism",
+      "writer"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "jerry-rice",
@@ -935,30 +1011,41 @@
     "display_name": "Jim Gindin",
     "full_author": "Jim Gindin",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "developer",
+    "source_title": "Front Office Football",
+    "source_creator": "Solecismic Software",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Developer of the Front Office Football series and founder of Solecismic Software.",
+    "tags": [
+      "developer",
+      "front-office-football",
+      "solecismic",
+      "meta"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "joe-greene",
     "display_name": "Joe Greene",
     "full_author": "Joe Greene",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_football_person",
+    "source_title": "NFL",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Hall of Fame defensive tackle known as Mean Joe Greene and a cornerstone of the Pittsburgh Steelers dynasty.",
+    "tags": [
+      "football",
+      "real",
+      "nfl",
+      "defensive-tackle",
+      "hall-of-fame"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "joey-berglund-coach-tennessee-raftsmen",
@@ -1038,15 +1125,19 @@
     "display_name": "John McEnroe",
     "full_author": "John McEnroe",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_historical_person",
+    "source_title": "Tennis",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "American tennis champion and broadcaster known for his elite play and fiery on-court personality.",
+    "tags": [
+      "real",
+      "sport",
+      "tennis"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "john-wheelwright-houston-apollos",
@@ -1114,15 +1205,19 @@
     "display_name": "Kenny Chesney",
     "full_author": "Kenny Chesney",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "musician",
+    "source_title": "Country music",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "American country music singer songwriter and stadium-touring performer.",
+    "tags": [
+      "real",
+      "music",
+      "country"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "kevin-colbert",
@@ -1150,15 +1245,20 @@
     "display_name": "Kurt Vonnegut",
     "full_author": "Kurt Vonnegut",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "writer",
+    "source_title": "American literature",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "American novelist known for satirical and darkly comic works such as Slaughterhouse-Five.",
+    "tags": [
+      "real",
+      "writer",
+      "literature",
+      "satire"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "lou-holtz",
@@ -1235,15 +1335,20 @@
     "display_name": "Mark Twain",
     "full_author": "Mark Twain",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "writer",
+    "source_title": "American literature",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Pen name of Samuel Clemens and one of the best-known American writers and humorists.",
+    "tags": [
+      "real",
+      "writer",
+      "literature",
+      "humor"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "marv-levy",
@@ -1427,15 +1532,19 @@
     "display_name": "Pete Weber",
     "full_author": "Pete Weber",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "real_historical_person",
+    "source_title": "Bowling",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "American professional bowler and one of the Professional Bowlers Association's most accomplished players.",
+    "tags": [
+      "real",
+      "sport",
+      "bowling"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "peyton-manning",
@@ -1464,30 +1573,41 @@
     "display_name": "Plato",
     "full_author": "Plato",
     "quote_count": 2,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "philosopher",
+    "source_title": "Ancient Greek philosophy",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Ancient Greek philosopher who was a student of Socrates teacher of Aristotle and founder of the Academy.",
+    "tags": [
+      "real",
+      "historical",
+      "philosophy",
+      "ancient-greece"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "plutarch",
     "display_name": "Plutarch",
     "full_author": "Plutarch",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "writer",
+    "source_title": "Parallel Lives",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Greek biographer and author best known for Parallel Lives and Moralia.",
+    "tags": [
+      "real",
+      "historical",
+      "writer",
+      "biography",
+      "ancient-greece"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "ray-lewis",
@@ -1515,30 +1635,41 @@
     "display_name": "Red Smith",
     "full_author": "Red Smith",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "writer",
+    "source_title": "Sports journalism",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "American sports columnist known for his literary style and Pulitzer Prize-winning sportswriting.",
+    "tags": [
+      "real",
+      "writer",
+      "sportswriter",
+      "journalism",
+      "pulitzer"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "rod-tidwell-jerry-maguire",
     "display_name": "Rod Tidwell",
     "full_author": "Rod Tidwell (Jerry Maguire)",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "film_or_pop_culture_character",
+    "source_title": "Jerry Maguire",
+    "source_creator": "Cameron Crowe",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Fictional wide receiver from the film Jerry Maguire played by Cuba Gooding Jr.",
+    "tags": [
+      "film",
+      "fictional",
+      "football",
+      "pop-culture"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "ron-jaworski",
@@ -1607,15 +1738,21 @@
     "display_name": "Sun Tzu",
     "full_author": "Sun Tzu",
     "quote_count": 2,
-    "author_type": "",
-    "source_title": "",
+    "author_type": "philosopher",
+    "source_title": "The Art of War",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Ancient Chinese strategist traditionally credited as the author of The Art of War.",
+    "tags": [
+      "real",
+      "historical",
+      "strategy",
+      "philosophy",
+      "china"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 3 known external reference metadata."
   },
   {
     "author_key": "ted-thompson",
