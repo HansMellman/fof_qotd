@@ -72,7 +72,52 @@ The checker reports:
 
 It does not modify files.
 
-## 4. Build Author JSON
+## 4. Apply Researched Metadata Patches
+
+For reviewed updates, paste researched metadata into:
+
+```text
+data/author_metadata_patch.csv
+```
+
+The patch CSV updates rows by `author_key`. It may only update these fields:
+
+```text
+author_type
+source_title
+source_creator
+short_note
+tags
+verified
+needs_research
+research_notes
+```
+
+It does not update `author_key`, `display_name`, `full_author`, `quote_count`, or `fof_role`.
+
+Run:
+
+```powershell
+python .\tools\apply_author_metadata_patch.py
+```
+
+You can use a custom patch file:
+
+```powershell
+python .\tools\apply_author_metadata_patch.py --patch data\some_patch.csv
+```
+
+The patch tool creates a backup before writing to `data/author_metadata.csv`.
+
+After applying a patch, run:
+
+```powershell
+python .\tools\check_author_metadata.py
+```
+
+Author facts must be manually researched and reviewed. Do not invent facts. Use `verified=true` only when the entry has been checked. Keep uncertain entries as `needs_research=true`.
+
+## 5. Build Author JSON
 
 ```powershell
 python .\tools\build_authors_json.py
@@ -87,7 +132,16 @@ site/data/authors.json
 
 The `tags` CSV field is converted into a JSON array.
 
-## 5. Use Later in the Frontend
+Review the generated files:
+
+```text
+data/authors.json
+site/data/authors.json
+```
+
+Then commit the reviewed CSV and generated JSON changes.
+
+## 6. Use Later in the Frontend
 
 A future About Authors feature can load:
 
