@@ -1588,15 +1588,16 @@
     "source_title": "Bowling",
     "source_creator": "",
     "fof_role": "",
-    "short_note": "American professional bowler and one of the Professional Bowlers Association's most accomplished players.",
+    "short_note": "American professional bowler and one of the Professional Bowlers Association's most accomplished players. The quote in this archive is a fan-added custom entry and is not part of the original 365 in-game FOF8 quotes.",
     "tags": [
       "real",
       "sport",
-      "bowling"
+      "bowling",
+      "fan-added-quote"
     ],
     "verified": true,
     "needs_research": false,
-    "research_notes": "Batch 3 known external reference metadata."
+    "research_notes": "Pete Weber is real. The quote entry is a custom fan-added archive addition rather than an original FOF8 quote."
   },
   {
     "author_key": "peyton-manning",
