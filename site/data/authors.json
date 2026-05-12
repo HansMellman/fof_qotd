@@ -145,15 +145,20 @@
     "display_name": "Benj Steinberg",
     "full_author": "Benj Steinberg, Coach, Baltimore Nightwings",
     "quote_count": 26,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "fof_universe_fictional",
+    "source_title": "Front Office Football 8",
+    "source_creator": "Solecismic Software",
     "fof_role": "Coach, Baltimore Nightwings",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Fictional in-universe coach of the Baltimore Nightwings in the FOF8 quote archive.",
+    "tags": [
+      "fof-universe",
+      "fictional",
+      "coach",
+      "baltimore-nightwings"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Final batch metadata. No clear external reference identified."
   },
   {
     "author_key": "bert-bell",
@@ -425,15 +430,20 @@
     "display_name": "Donald Kenyon Hill",
     "full_author": "Donald Kenyon Hill, Poet Laureate of Football",
     "quote_count": 11,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "fof_universe_fictional",
+    "source_title": "Front Office Football 8",
+    "source_creator": "Solecismic Software",
     "fof_role": "Poet Laureate of Football",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Fictional in-universe poet laureate figure used for football-themed literary quotes in the FOF8 archive.",
+    "tags": [
+      "fof-universe",
+      "fictional",
+      "poet",
+      "football-literary"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Final batch metadata. No clear exact external reference identified."
   },
   {
     "author_key": "doremus-jessup-gm-new-england-colonials",
@@ -641,15 +651,19 @@
     "display_name": "Gary Lambert",
     "full_author": "Gary Lambert, New Jersey Meteorites",
     "quote_count": 2,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "fof_universe_fictional",
+    "source_title": "Front Office Football 8",
+    "source_creator": "Solecismic Software",
     "fof_role": "New Jersey Meteorites",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Fictional in-universe football figure associated with the New Jersey Meteorites in the FOF8 quote archive.",
+    "tags": [
+      "fof-universe",
+      "fictional",
+      "new-jersey-meteorites"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Final batch metadata. No clear external reference identified."
   },
   {
     "author_key": "georg-wilhelm-friedrich-hegel",
@@ -738,15 +752,21 @@
     "display_name": "George M. Gilbert",
     "full_author": "George M. Gilbert",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "writer",
+    "source_title": "Team Of One: We Believe",
+    "source_creator": "George M. Gilbert",
     "fof_role": "",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Football coaching author associated with Team Of One We Believe and quoted for team culture and coaching themes.",
+    "tags": [
+      "real",
+      "writer",
+      "football",
+      "coaching",
+      "team-culture"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Final batch metadata. External football coaching quote attribution identified."
   },
   {
     "author_key": "george-milton-gm-st-louis-stags",
@@ -915,15 +935,20 @@
     "display_name": "Hurston Wood",
     "full_author": "Hurston Wood, Coach, Seattle Cyberhawks",
     "quote_count": 11,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "fof_universe_fictional",
+    "source_title": "Front Office Football 8",
+    "source_creator": "Solecismic Software",
     "fof_role": "Coach, Seattle Cyberhawks",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Fictional in-universe coach of the Seattle Cyberhawks in the FOF8 quote archive.",
+    "tags": [
+      "fof-universe",
+      "fictional",
+      "coach",
+      "seattle-cyberhawks"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Final batch metadata. No clear external reference identified."
   },
   {
     "author_key": "jake-delhomme",
@@ -1052,30 +1077,39 @@
     "display_name": "Joey Berglund",
     "full_author": "Joey Berglund, Coach, Tennessee Raftsmen",
     "quote_count": 6,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "fof_universe_fictional",
+    "source_title": "Front Office Football 8",
+    "source_creator": "Solecismic Software",
     "fof_role": "Coach, Tennessee Raftsmen",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Fictional in-universe coach of the Tennessee Raftsmen in the FOF8 quote archive.",
+    "tags": [
+      "fof-universe",
+      "fictional",
+      "coach",
+      "tennessee-raftsmen"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Final batch metadata. No clear external reference identified."
   },
   {
     "author_key": "john-berry-green-bay-green-wave",
     "display_name": "John Berry",
     "full_author": "John Berry, Green Bay Green Wave",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "fof_universe_fictional",
+    "source_title": "Front Office Football 8",
+    "source_creator": "Solecismic Software",
     "fof_role": "Green Bay Green Wave",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Fictional in-universe football figure associated with the Green Bay Green Wave in the FOF8 quote archive.",
+    "tags": [
+      "fof-universe",
+      "fictional",
+      "green-bay-green-wave"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Final batch metadata. No clear external reference identified."
   },
   {
     "author_key": "john-elway",
@@ -1285,30 +1319,39 @@
     "display_name": "Louis Holland",
     "full_author": "Louis Holland, Philadelphia Condors",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "fof_universe_fictional",
+    "source_title": "Front Office Football 8",
+    "source_creator": "Solecismic Software",
     "fof_role": "Philadelphia Condors",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Fictional in-universe football figure associated with the Philadelphia Condors in the FOF8 quote archive.",
+    "tags": [
+      "fof-universe",
+      "fictional",
+      "philadelphia-condors"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Final batch metadata. No clear external reference identified."
   },
   {
     "author_key": "mac-mcleod-league-statistician",
     "display_name": "Mac McLeod",
     "full_author": "Mac McLeod, League Statistician",
     "quote_count": 9,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "fof_universe_fictional",
+    "source_title": "Front Office Football 8",
+    "source_creator": "Solecismic Software",
     "fof_role": "League Statistician",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Fictional in-universe league statistician used for statistical football quotes in the FOF8 archive.",
+    "tags": [
+      "fof-universe",
+      "fictional",
+      "league-statistician",
+      "statistics"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Final batch metadata. No clear external reference identified."
   },
   {
     "author_key": "mario-williams",
@@ -1398,15 +1441,20 @@
     "display_name": "Milt Dagget",
     "full_author": "Milt Dagget, GM, New Orleans Delta Rays",
     "quote_count": 17,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "Free Air",
+    "source_creator": "Sinclair Lewis",
     "fof_role": "GM, New Orleans Delta Rays",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Appears to reference Milt Daggett from Sinclair Lewis's Free Air used here as a fictional GM for the New Orleans Delta Rays.",
+    "tags": [
+      "literature",
+      "fictional",
+      "sinclair-lewis",
+      "free-air"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Final batch metadata. Game spelling appears as Milt Dagget while the literary character is usually spelled Milt Daggett."
   },
   {
     "author_key": "ndamukong-suh",
@@ -1474,15 +1522,19 @@
     "display_name": "Patrick Wallingford",
     "full_author": "Patrick Wallingford, past league commissioner",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "fof_universe_fictional",
+    "source_title": "Front Office Football 8",
+    "source_creator": "Solecismic Software",
     "fof_role": "past league commissioner",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Fictional in-universe past league commissioner in the FOF8 quote archive.",
+    "tags": [
+      "fof-universe",
+      "fictional",
+      "commissioner"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Final batch metadata. No clear external reference identified."
   },
   {
     "author_key": "paul-brown",
