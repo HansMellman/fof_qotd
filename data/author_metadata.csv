@@ -1,10 +1,10 @@
 ﻿author_key,display_name,full_author,quote_count,author_type,source_title,source_creator,fof_role,short_note,tags,verified,needs_research,research_notes
-adam-trask-pittsburgh-ironmen,Adam Trask,"Adam Trask, Pittsburgh Ironmen",7,,,,Pittsburgh Ironmen,,,false,true,
+adam-trask-pittsburgh-ironmen,Adam Trask,"Adam Trask, Pittsburgh Ironmen",7,literary_character,East of Eden,John Steinbeck,Pittsburgh Ironmen,"A character from John Steinbeck's East of Eden, repurposed here as a fictional football figure for the Pittsburgh Ironmen.",literature;fictional;steinbeck,true,false,Batch 1 literary metadata.
 al-davis,Al Davis,Al Davis,1,,,,,,,false,true,
 albert-einstein,Albert Einstein,Albert Einstein,1,,,,,,,false,true,
-amory-blaine-miami-bay-sharks,Amory Blaine,"Amory Blaine, Miami Bay Sharks",1,,,,Miami Bay Sharks,,,false,true,
+amory-blaine-miami-bay-sharks,Amory Blaine,"Amory Blaine, Miami Bay Sharks",1,literary_character,This Side of Paradise,F. Scott Fitzgerald,Miami Bay Sharks,"The protagonist of Fitzgerald's This Side of Paradise, used here as a fictional football figure for the Miami Bay Sharks.",literature;fictional;fitzgerald,true,false,Batch 1 literary metadata.
 andrew-luck,Andrew Luck,Andrew Luck,1,,,,,,,false,true,
-anthony-patch-coach-washington-landslides,Anthony Patch,"Anthony Patch, Coach, Washington Landslides",13,,,,"Coach, Washington Landslides",,,false,true,
+anthony-patch-coach-washington-landslides,Anthony Patch,"Anthony Patch, Coach, Washington Landslides",13,literary_character,The Beautiful and Damned,F. Scott Fitzgerald,"Coach, Washington Landslides","The protagonist of Fitzgerald's The Beautiful and Damned, used here as a fictional coach for the Washington Landslides.",literature;fictional;fitzgerald,true,false,Batch 1 literary metadata.
 barry-sanders,Barry Sanders,Barry Sanders,1,,,,,,,false,true,
 benj-steinberg-coach-baltimore-nightwings,Benj Steinberg,"Benj Steinberg, Coach, Baltimore Nightwings",26,,,,"Coach, Baltimore Nightwings",,,false,true,
 bert-bell,Bert Bell,Bert Bell,1,,,,,,,false,true,
@@ -13,38 +13,38 @@ bill-polian,Bill Polian,Bill Polian,2,,,,,,,false,true,
 bill-walsh,Bill Walsh,Bill Walsh,1,,,,,,,false,true,
 bum-phillips,Bum Phillips,Bum Phillips,1,,,,,,,false,true,
 cam-newton,Cam Newton,Cam Newton,1,,,,,,,false,true,
-cass-timberlane-gm-cincinnati-tigers,Cass Timberlane,"Cass Timberlane, GM, Cincinnati Tigers",16,,,,"GM, Cincinnati Tigers",,,false,true,
+cass-timberlane-gm-cincinnati-tigers,Cass Timberlane,"Cass Timberlane, GM, Cincinnati Tigers",16,literary_character,Cass Timberlane,Sinclair Lewis,"GM, Cincinnati Tigers","The title character of Sinclair Lewis's Cass Timberlane, used here as a fictional GM for the Cincinnati Tigers.",literature;fictional;sinclair-lewis,true,false,Batch 1 literary metadata.
 chuck-noll,Chuck Noll,Chuck Noll,1,,,,,,,false,true,
-clyde-griffiths-coach-new-york-gladiators,Clyde Griffiths,"Clyde Griffiths, Coach, New York Gladiators",18,,,,"Coach, New York Gladiators",,,false,true,
+clyde-griffiths-coach-new-york-gladiators,Clyde Griffiths,"Clyde Griffiths, Coach, New York Gladiators",18,literary_character,An American Tragedy,Theodore Dreiser,"Coach, New York Gladiators","The doomed central character of Theodore Dreiser's An American Tragedy, used here as a fictional coach for the New York Gladiators.",literature;fictional;dreiser,true,false,Batch 1 literary metadata.
 confucius,Confucius,Confucius,1,,,,,,,false,true,
 dhani-jones,Dhani Jones,Dhani Jones,1,,,,,,,false,true,
-dick-diver-coach-oakland-bandits,Dick Diver,"Dick Diver, Coach, Oakland Bandits",11,,,,"Coach, Oakland Bandits",,,false,true,
+dick-diver-coach-oakland-bandits,Dick Diver,"Dick Diver, Coach, Oakland Bandits",11,literary_character,Tender Is the Night,F. Scott Fitzgerald,"Coach, Oakland Bandits","The central character of Fitzgerald's Tender Is the Night, used here as a fictional coach for the Oakland Bandits.",literature;fictional;fitzgerald,true,false,Batch 1 literary metadata.
 don-shula,Don Shula,Don Shula,1,,,,,,,false,true,
 donald-kenyon-hill-poet-laureate-of-football,Donald Kenyon Hill,"Donald Kenyon Hill, Poet Laureate of Football",11,,,,Poet Laureate of Football,,,false,true,
-doremus-jessup-gm-new-england-colonials,Doremus Jessup,"Doremus Jessup, GM, New England Colonials",19,,,,"GM, New England Colonials",,,false,true,
+doremus-jessup-gm-new-england-colonials,Doremus Jessup,"Doremus Jessup, GM, New England Colonials",19,literary_character,It Can't Happen Here,Sinclair Lewis,"GM, New England Colonials","The protagonist of Sinclair Lewis's It Can't Happen Here, used here as a fictional GM for the New England Colonials.",literature;fictional;sinclair-lewis,true,false,Batch 1 literary metadata.
 drew-bledsoe,Drew Bledsoe,Drew Bledsoe,1,,,,,,,false,true,
 eleanor-roosevelt,Eleanor Roosevelt,Eleanor Roosevelt,2,,,,,,,false,true,
 ernie-accorsi,Ernie Accorsi,Ernie Accorsi,5,,,,,,,false,true,
-eugene-witla-coach-jacksonville-cougars,Eugene Witla,"Eugene Witla, Coach, Jacksonville Cougars",16,,,,"Coach, Jacksonville Cougars",,,false,true,
+eugene-witla-coach-jacksonville-cougars,Eugene Witla,"Eugene Witla, Coach, Jacksonville Cougars",16,literary_character,The Genius,Theodore Dreiser,"Coach, Jacksonville Cougars","The central character of Theodore Dreiser's The Genius, used here as a fictional coach for the Jacksonville Cougars.",literature;fictional;dreiser,true,false,Batch 1 literary metadata.
 f-scott-fitzgerald,F. Scott Fitzgerald,F. Scott Fitzgerald,1,,,,,,,false,true,
 fran-tarkenton,Fran Tarkenton,Fran Tarkenton,1,,,,,,,false,true,
-frank-cowperwood-coach-detroit-mocats,Frank Cowperwood,"Frank Cowperwood, Coach, Detroit MoCats",15,,,,"Coach, Detroit MoCats",,,false,true,
+frank-cowperwood-coach-detroit-mocats,Frank Cowperwood,"Frank Cowperwood, Coach, Detroit MoCats",15,literary_character,The Financier,Theodore Dreiser,"Coach, Detroit MoCats","The financier protagonist of Theodore Dreiser's Trilogy of Desire, used here as a fictional coach for the Detroit MoCats.",literature;fictional;dreiser,true,false,Batch 1 literary metadata.
 frank-gifford,Frank Gifford,Frank Gifford,1,,,,,,,false,true,
-fred-trumper-san-diego-lightning,Fred Trumper,"Fred Trumper, San Diego Lightning",2,,,,San Diego Lightning,,,false,true,
+fred-trumper-san-diego-lightning,Fred Trumper,"Fred Trumper, San Diego Lightning",2,literary_character,The Water-Method Man,John Irving,San Diego Lightning,"The flawed narrator of John Irving's The Water-Method Man, used here as a fictional football figure for the San Diego Lightning.",literature;fictional;john-irving,true,false,Batch 1 literary metadata.
 gary-lambert-new-jersey-meteorites,Gary Lambert,"Gary Lambert, New Jersey Meteorites",2,,,,New Jersey Meteorites,,,false,true,
 georg-wilhelm-friedrich-hegel,Georg Wilhelm Friedrich Hegel,Georg Wilhelm Friedrich Hegel,1,,,,,,,false,true,
 george-bernard-shaw,George Bernard Shaw,George Bernard Shaw,1,,,,,,,false,true,
-george-f-babbitt-gm-arizona-pioneers,George F. Babbitt,"George F. Babbitt, GM, Arizona Pioneers",18,,,,"GM, Arizona Pioneers",,,false,true,
+george-f-babbitt-gm-arizona-pioneers,George F. Babbitt,"George F. Babbitt, GM, Arizona Pioneers",18,literary_character,Babbitt,Sinclair Lewis,"GM, Arizona Pioneers","The title character of Sinclair Lewis's Babbitt, used here as a fictional GM for the Arizona Pioneers.",literature;fictional;sinclair-lewis,true,false,Batch 1 literary metadata.
 george-halas,George Halas,George Halas,1,,,,,,,false,true,
 george-m-gilbert,George M. Gilbert,George M. Gilbert,1,,,,,,,false,true,
-george-milton-gm-st-louis-stags,George Milton,"George Milton, GM, St. Louis Stags",12,,,,"GM, St. Louis Stags",,,false,true,
+george-milton-gm-st-louis-stags,George Milton,"George Milton, GM, St. Louis Stags",12,literary_character,Of Mice and Men,John Steinbeck,"GM, St. Louis Stags","A central character in John Steinbeck's Of Mice and Men, used here as a fictional GM for the St. Louis Stags.",literature;fictional;steinbeck,true,false,Batch 1 literary metadata.
 george-will,George Will,George Will,1,,,,,,,false,true,
 grantland-rice,Grantland Rice,Grantland Rice,1,,,,,,,false,true,
 greg-schiano,Greg Schiano,Greg Schiano,1,,,,,,,false,true,
 h-g-bissinger,H.G. Bissinger,H.G. Bissinger,1,,,,,,,false,true,
 heraclitus,Heraclitus,Heraclitus,1,,,,,,,false,true,
 herman-boone-remember-the-titans,Herman Boone,Herman Boone (Remember the Titans),1,,,,,,,false,true,
-homer-wells-gm-minnesota-norsemen,Homer Wells,"Homer Wells, GM, Minnesota Norsemen",13,,,,"GM, Minnesota Norsemen",,,false,true,
+homer-wells-gm-minnesota-norsemen,Homer Wells,"Homer Wells, GM, Minnesota Norsemen",13,literary_character,The Cider House Rules,John Irving,"GM, Minnesota Norsemen","The protagonist of John Irving's The Cider House Rules, used here as a fictional GM for the Minnesota Norsemen.",literature;fictional;john-irving,true,false,Batch 1 literary metadata.
 hurston-wood-coach-seattle-cyberhawks,Hurston Wood,"Hurston Wood, Coach, Seattle Cyberhawks",11,,,,"Coach, Seattle Cyberhawks",,,false,true,
 jake-delhomme,Jake Delhomme,Jake Delhomme,1,,,,,,,false,true,
 james-otto,James Otto,James Otto,1,,,,,,,false,true,
@@ -57,7 +57,7 @@ john-berry-green-bay-green-wave,John Berry,"John Berry, Green Bay Green Wave",1,
 john-elway,John Elway,John Elway,1,,,,,,,false,true,
 john-madden,John Madden,John Madden,1,,,,,,,false,true,
 john-mcenroe,John McEnroe,John McEnroe,1,,,,,,,false,true,
-john-wheelwright-houston-apollos,John Wheelwright,"John Wheelwright, Houston Apollos",1,,,,Houston Apollos,,,false,true,
+john-wheelwright-houston-apollos,John Wheelwright,"John Wheelwright, Houston Apollos",1,literary_character,A Prayer for Owen Meany,John Irving,Houston Apollos,"The narrator of John Irving's A Prayer for Owen Meany, used here as a fictional football figure for the Houston Apollos.",literature;fictional;john-irving,true,false,Batch 1 literary metadata.
 junior-seau,Junior Seau,Junior Seau,1,,,,,,,false,true,
 ken-stabler,Ken Stabler,Ken Stabler,1,,,,,,,false,true,
 kenny-chesney,Kenny Chesney,Kenny Chesney,1,,,,,,,false,true,
@@ -72,7 +72,7 @@ marv-levy,Marv Levy,Marv Levy,1,,,,,,,false,true,
 mike-ditka,Mike Ditka,Mike Ditka,1,,,,,,,false,true,
 milt-dagget-gm-new-orleans-delta-rays,Milt Dagget,"Milt Dagget, GM, New Orleans Delta Rays",17,,,,"GM, New Orleans Delta Rays",,,false,true,
 ndamukong-suh,Ndamukong Suh,Ndamukong Suh,1,,,,,,,false,true,
-nick-carraway-coach-buffalo-snow-riders,Nick Carraway,"Nick Carraway, Coach, Buffalo Snow Riders",7,,,,"Coach, Buffalo Snow Riders",,,false,true,
+nick-carraway-coach-buffalo-snow-riders,Nick Carraway,"Nick Carraway, Coach, Buffalo Snow Riders",7,literary_character,The Great Gatsby,F. Scott Fitzgerald,"Coach, Buffalo Snow Riders","The narrator of Fitzgerald's The Great Gatsby, used here as a fictional coach for the Buffalo Snow Riders.",literature;fictional;fitzgerald,true,false,Batch 1 literary metadata.
 ozzie-newsome,Ozzie Newsome,Ozzie Newsome,1,,,,,,,false,true,
 patrick-wallingford-past-league-commissioner,Patrick Wallingford,"Patrick Wallingford, past league commissioner",1,,,,past league commissioner,,,false,true,
 paul-brown,Paul Brown,Paul Brown,1,,,,,,,false,true,
@@ -94,4 +94,4 @@ tom-brady,Tom Brady,Tom Brady,3,,,,,,,false,true,
 tony-dungy,Tony Dungy,Tony Dungy,1,,,,,,,false,true,
 troy-polamalu,Troy Polamalu,Troy Polamalu,1,,,,,,,false,true,
 vince-lombardi,Vince Lombardi,Vince Lombardi,3,,,,,,,false,true,
-will-kennicott-coach-dallas-lone-stars,Will Kennicott,"Will Kennicott, Coach, Dallas Lone Stars",26,,,,"Coach, Dallas Lone Stars",,,false,true,
+will-kennicott-coach-dallas-lone-stars,Will Kennicott,"Will Kennicott, Coach, Dallas Lone Stars",26,literary_character,Main Street,Sinclair Lewis,"Coach, Dallas Lone Stars","Dr. Will Kennicott from Sinclair Lewis's Main Street, used here as a fictional coach for the Dallas Lone Stars.",literature;fictional;sinclair-lewis,true,false,Batch 1 literary metadata.

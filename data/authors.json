@@ -4,15 +4,19 @@
     "display_name": "Adam Trask",
     "full_author": "Adam Trask, Pittsburgh Ironmen",
     "quote_count": 7,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "East of Eden",
+    "source_creator": "John Steinbeck",
     "fof_role": "Pittsburgh Ironmen",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "A character from John Steinbeck's East of Eden, repurposed here as a fictional football figure for the Pittsburgh Ironmen.",
+    "tags": [
+      "literature",
+      "fictional",
+      "steinbeck"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   },
   {
     "author_key": "al-davis",
@@ -49,15 +53,19 @@
     "display_name": "Amory Blaine",
     "full_author": "Amory Blaine, Miami Bay Sharks",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "This Side of Paradise",
+    "source_creator": "F. Scott Fitzgerald",
     "fof_role": "Miami Bay Sharks",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "The protagonist of Fitzgerald's This Side of Paradise, used here as a fictional football figure for the Miami Bay Sharks.",
+    "tags": [
+      "literature",
+      "fictional",
+      "fitzgerald"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   },
   {
     "author_key": "andrew-luck",
@@ -79,15 +87,19 @@
     "display_name": "Anthony Patch",
     "full_author": "Anthony Patch, Coach, Washington Landslides",
     "quote_count": 13,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "The Beautiful and Damned",
+    "source_creator": "F. Scott Fitzgerald",
     "fof_role": "Coach, Washington Landslides",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "The protagonist of Fitzgerald's The Beautiful and Damned, used here as a fictional coach for the Washington Landslides.",
+    "tags": [
+      "literature",
+      "fictional",
+      "fitzgerald"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   },
   {
     "author_key": "barry-sanders",
@@ -214,15 +226,19 @@
     "display_name": "Cass Timberlane",
     "full_author": "Cass Timberlane, GM, Cincinnati Tigers",
     "quote_count": 16,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "Cass Timberlane",
+    "source_creator": "Sinclair Lewis",
     "fof_role": "GM, Cincinnati Tigers",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "The title character of Sinclair Lewis's Cass Timberlane, used here as a fictional GM for the Cincinnati Tigers.",
+    "tags": [
+      "literature",
+      "fictional",
+      "sinclair-lewis"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   },
   {
     "author_key": "chuck-noll",
@@ -244,15 +260,19 @@
     "display_name": "Clyde Griffiths",
     "full_author": "Clyde Griffiths, Coach, New York Gladiators",
     "quote_count": 18,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "An American Tragedy",
+    "source_creator": "Theodore Dreiser",
     "fof_role": "Coach, New York Gladiators",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "The doomed central character of Theodore Dreiser's An American Tragedy, used here as a fictional coach for the New York Gladiators.",
+    "tags": [
+      "literature",
+      "fictional",
+      "dreiser"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   },
   {
     "author_key": "confucius",
@@ -289,15 +309,19 @@
     "display_name": "Dick Diver",
     "full_author": "Dick Diver, Coach, Oakland Bandits",
     "quote_count": 11,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "Tender Is the Night",
+    "source_creator": "F. Scott Fitzgerald",
     "fof_role": "Coach, Oakland Bandits",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "The central character of Fitzgerald's Tender Is the Night, used here as a fictional coach for the Oakland Bandits.",
+    "tags": [
+      "literature",
+      "fictional",
+      "fitzgerald"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   },
   {
     "author_key": "don-shula",
@@ -334,15 +358,19 @@
     "display_name": "Doremus Jessup",
     "full_author": "Doremus Jessup, GM, New England Colonials",
     "quote_count": 19,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "It Can't Happen Here",
+    "source_creator": "Sinclair Lewis",
     "fof_role": "GM, New England Colonials",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "The protagonist of Sinclair Lewis's It Can't Happen Here, used here as a fictional GM for the New England Colonials.",
+    "tags": [
+      "literature",
+      "fictional",
+      "sinclair-lewis"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   },
   {
     "author_key": "drew-bledsoe",
@@ -394,15 +422,19 @@
     "display_name": "Eugene Witla",
     "full_author": "Eugene Witla, Coach, Jacksonville Cougars",
     "quote_count": 16,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "The Genius",
+    "source_creator": "Theodore Dreiser",
     "fof_role": "Coach, Jacksonville Cougars",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "The central character of Theodore Dreiser's The Genius, used here as a fictional coach for the Jacksonville Cougars.",
+    "tags": [
+      "literature",
+      "fictional",
+      "dreiser"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   },
   {
     "author_key": "f-scott-fitzgerald",
@@ -439,15 +471,19 @@
     "display_name": "Frank Cowperwood",
     "full_author": "Frank Cowperwood, Coach, Detroit MoCats",
     "quote_count": 15,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "The Financier",
+    "source_creator": "Theodore Dreiser",
     "fof_role": "Coach, Detroit MoCats",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "The financier protagonist of Theodore Dreiser's Trilogy of Desire, used here as a fictional coach for the Detroit MoCats.",
+    "tags": [
+      "literature",
+      "fictional",
+      "dreiser"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   },
   {
     "author_key": "frank-gifford",
@@ -469,15 +505,19 @@
     "display_name": "Fred Trumper",
     "full_author": "Fred Trumper, San Diego Lightning",
     "quote_count": 2,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "The Water-Method Man",
+    "source_creator": "John Irving",
     "fof_role": "San Diego Lightning",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "The flawed narrator of John Irving's The Water-Method Man, used here as a fictional football figure for the San Diego Lightning.",
+    "tags": [
+      "literature",
+      "fictional",
+      "john-irving"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   },
   {
     "author_key": "gary-lambert-new-jersey-meteorites",
@@ -529,15 +569,19 @@
     "display_name": "George F. Babbitt",
     "full_author": "George F. Babbitt, GM, Arizona Pioneers",
     "quote_count": 18,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "Babbitt",
+    "source_creator": "Sinclair Lewis",
     "fof_role": "GM, Arizona Pioneers",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "The title character of Sinclair Lewis's Babbitt, used here as a fictional GM for the Arizona Pioneers.",
+    "tags": [
+      "literature",
+      "fictional",
+      "sinclair-lewis"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   },
   {
     "author_key": "george-halas",
@@ -574,15 +618,19 @@
     "display_name": "George Milton",
     "full_author": "George Milton, GM, St. Louis Stags",
     "quote_count": 12,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "Of Mice and Men",
+    "source_creator": "John Steinbeck",
     "fof_role": "GM, St. Louis Stags",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "A central character in John Steinbeck's Of Mice and Men, used here as a fictional GM for the St. Louis Stags.",
+    "tags": [
+      "literature",
+      "fictional",
+      "steinbeck"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   },
   {
     "author_key": "george-will",
@@ -679,15 +727,19 @@
     "display_name": "Homer Wells",
     "full_author": "Homer Wells, GM, Minnesota Norsemen",
     "quote_count": 13,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "The Cider House Rules",
+    "source_creator": "John Irving",
     "fof_role": "GM, Minnesota Norsemen",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "The protagonist of John Irving's The Cider House Rules, used here as a fictional GM for the Minnesota Norsemen.",
+    "tags": [
+      "literature",
+      "fictional",
+      "john-irving"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   },
   {
     "author_key": "hurston-wood-coach-seattle-cyberhawks",
@@ -874,15 +926,19 @@
     "display_name": "John Wheelwright",
     "full_author": "John Wheelwright, Houston Apollos",
     "quote_count": 1,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "A Prayer for Owen Meany",
+    "source_creator": "John Irving",
     "fof_role": "Houston Apollos",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "The narrator of John Irving's A Prayer for Owen Meany, used here as a fictional football figure for the Houston Apollos.",
+    "tags": [
+      "literature",
+      "fictional",
+      "john-irving"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   },
   {
     "author_key": "junior-seau",
@@ -1099,15 +1155,19 @@
     "display_name": "Nick Carraway",
     "full_author": "Nick Carraway, Coach, Buffalo Snow Riders",
     "quote_count": 7,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "The Great Gatsby",
+    "source_creator": "F. Scott Fitzgerald",
     "fof_role": "Coach, Buffalo Snow Riders",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "The narrator of Fitzgerald's The Great Gatsby, used here as a fictional coach for the Buffalo Snow Riders.",
+    "tags": [
+      "literature",
+      "fictional",
+      "fitzgerald"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   },
   {
     "author_key": "ozzie-newsome",
@@ -1429,14 +1489,18 @@
     "display_name": "Will Kennicott",
     "full_author": "Will Kennicott, Coach, Dallas Lone Stars",
     "quote_count": 26,
-    "author_type": "",
-    "source_title": "",
-    "source_creator": "",
+    "author_type": "literary_character",
+    "source_title": "Main Street",
+    "source_creator": "Sinclair Lewis",
     "fof_role": "Coach, Dallas Lone Stars",
-    "short_note": "",
-    "tags": [],
-    "verified": false,
-    "needs_research": true,
-    "research_notes": ""
+    "short_note": "Dr. Will Kennicott from Sinclair Lewis's Main Street, used here as a fictional coach for the Dallas Lone Stars.",
+    "tags": [
+      "literature",
+      "fictional",
+      "sinclair-lewis"
+    ],
+    "verified": true,
+    "needs_research": false,
+    "research_notes": "Batch 1 literary metadata."
   }
 ]
