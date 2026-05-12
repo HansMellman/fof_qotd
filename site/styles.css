@@ -328,6 +328,13 @@ input[type="search"]::placeholder {
   text-transform: uppercase;
 }
 
+.today-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 blockquote {
   margin: 22px 0 14px;
   color: var(--ink);
@@ -350,6 +357,17 @@ blockquote {
   font-size: 1.05rem;
   font-weight: 700;
   text-align: right;
+}
+
+.hero-special-badge {
+  display: inline-block;
+}
+
+.hero-special-note,
+.author-special-note {
+  color: #5d2b1f;
+  font-size: 0.92rem;
+  font-weight: 800;
 }
 
 .today-actions,
@@ -415,6 +433,14 @@ blockquote {
   font-size: 0.74rem;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.badge.special-fake {
+  background: #7f3b24;
+}
+
+.badge.special-leap-day {
+  background: #0c5960;
 }
 
 .quote-card blockquote {
@@ -615,6 +641,11 @@ blockquote {
   color: var(--teal);
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.author-special-note {
+  border-left: 3px solid var(--gold);
+  padding-left: 9px;
 }
 
 .author-detail-list {

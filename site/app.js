@@ -17,6 +17,8 @@ const heroLabel = document.querySelector("#heroLabel");
 const todayQuoteDate = document.querySelector("#todayQuoteDate");
 const todayQuoteText = document.querySelector("#todayQuoteText");
 const todayQuoteAuthor = document.querySelector("#todayQuoteAuthor");
+const heroSpecialBadge = document.querySelector("#heroSpecialBadge");
+const heroSpecialNote = document.querySelector("#heroSpecialNote");
 const heroPreviousButton = document.querySelector("#heroPreviousButton");
 const heroNextButton = document.querySelector("#heroNextButton");
 const todayCopyButton = document.querySelector("#todayCopyButton");
@@ -182,7 +184,41 @@ function updateFilterOptions() {
 }
 
 function formatSpecialLabel(specialType) {
-  return specialType.replaceAll("_", " ");
+  const labels = {
+    fake: "FAN ADDED",
+    leap_day: "LEAP DAY",
+    special: "SPECIAL",
+  };
+  return labels[specialType] || specialType.replaceAll("_", " ").toUpperCase();
+}
+
+function getSpecialTooltip(specialType) {
+  if (specialType === "fake") {
+    return "Fan-added quote, not part of the original FOF8 quote set.";
+  }
+  if (specialType === "leap_day") {
+    return "Leap-day quote outside the standard 365-day archive.";
+  }
+  return "Special quote entry.";
+}
+
+function getSpecialNote(specialType) {
+  if (specialType === "fake") {
+    return "Custom archive addition, not part of the original game set.";
+  }
+  return "";
+}
+
+function getSpecialClass(specialType) {
+  return `special-${specialType.replaceAll("_", "-")}`;
+}
+
+function isFanAddedQuote(quote) {
+  return quote && ["fake", "custom", "fan_added", "fan-added"].includes(String(quote.special_type || "").toLowerCase());
+}
+
+function getAuthorFanAddedCount(fullAuthor) {
+  return quotes.filter((quote) => quote.author === fullAuthor && isFanAddedQuote(quote)).length;
 }
 
 function getAuthorTypeLabel(authorType) {
@@ -250,6 +286,8 @@ function setHeroQuote(quote, mode = "filtered", pool = [], index = 0) {
     todayQuoteDate.textContent = "No matching quote";
     todayQuoteText.textContent = "No quotes match the current filters. Try clearing search, changing month or author, or including special quotes.";
     todayQuoteAuthor.textContent = "";
+    heroSpecialBadge.hidden = true;
+    heroSpecialNote.hidden = true;
     todayCopyButton.disabled = true;
     todayScreenshotButton.disabled = true;
     updateHeroNav();
@@ -259,6 +297,21 @@ function setHeroQuote(quote, mode = "filtered", pool = [], index = 0) {
   todayQuoteDate.textContent = quote.date_label;
   todayQuoteText.textContent = quote.text || "[Needs review]";
   todayQuoteAuthor.textContent = quote.author ? `- ${quote.author}` : "";
+
+  if (quote.special_type) {
+    heroSpecialBadge.hidden = false;
+    heroSpecialBadge.textContent = formatSpecialLabel(quote.special_type);
+    heroSpecialBadge.title = getSpecialTooltip(quote.special_type);
+    heroSpecialBadge.className = `badge hero-special-badge ${getSpecialClass(quote.special_type)}`;
+    const note = getSpecialNote(quote.special_type);
+    heroSpecialNote.hidden = !note;
+    heroSpecialNote.textContent = note;
+  } else {
+    heroSpecialBadge.hidden = true;
+    heroSpecialNote.hidden = true;
+    heroSpecialNote.textContent = "";
+  }
+
   todayCopyButton.disabled = false;
   todayScreenshotButton.disabled = !quote.image_path;
   updateHeroNav();
@@ -408,6 +461,17 @@ function renderAuthorMetadataCards() {
     typeLine.textContent = `${getAuthorTypeLabel(author.author_type)} · ${author.quote_count} quote${author.quote_count === 1 ? "" : "s"}`;
     card.append(typeLine);
 
+    const fanAddedCount = getAuthorFanAddedCount(author.full_author);
+    if (fanAddedCount > 0) {
+      const fanNote = document.createElement("p");
+      fanNote.className = "author-special-note";
+      fanNote.textContent = fanAddedCount === author.quote_count
+        ? "Includes fan-added quote only."
+        : "Includes fan-added quote.";
+      fanNote.title = "Fan-added quote, not part of the original FOF8 quote set.";
+      card.append(fanNote);
+    }
+
     const details = document.createElement("dl");
     details.className = "author-detail-list";
     const detailItems = [
@@ -516,6 +580,8 @@ function renderQuotes(visibleQuotes) {
     if (quote.special_type) {
       badge.hidden = false;
       badge.textContent = formatSpecialLabel(quote.special_type);
+      badge.title = getSpecialTooltip(quote.special_type);
+      badge.classList.add(getSpecialClass(quote.special_type));
     }
 
     if (quote.author) {
