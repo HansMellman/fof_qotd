@@ -8,6 +8,7 @@ const specialToggle = document.querySelector("#specialToggle");
 const todayButton = document.querySelector("#todayButton");
 const randomButton = document.querySelector("#randomButton");
 const quizButton = document.querySelector("#quizButton");
+const topAboutAuthorsButton = document.querySelector("#topAboutAuthorsButton");
 const clearButton = document.querySelector("#clearButton");
 const resultCount = document.querySelector("#resultCount");
 const quoteGrid = document.querySelector("#quoteGrid");
@@ -46,6 +47,7 @@ const quizChoices = document.querySelector("#quizChoices");
 const quizFeedback = document.querySelector("#quizFeedback");
 const quizNextButton = document.querySelector("#quizNextButton");
 const quizRestartButton = document.querySelector("#quizRestartButton");
+const backToTopButton = document.querySelector("#backToTopButton");
 
 const AUTHOR_TYPE_LABELS = {
   real_football_person: "Real Football People",
@@ -722,6 +724,17 @@ function closeQuizModal() {
   quizModal.hidden = true;
 }
 
+function updateBackToTopButton() {
+  backToTopButton.hidden = window.scrollY < 520;
+}
+
+function scrollBackToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
 function renderQuotes(visibleQuotes) {
   quoteGrid.replaceChildren();
   resultCount.textContent = `${visibleQuotes.length} result${visibleQuotes.length === 1 ? "" : "s"}`;
@@ -877,6 +890,7 @@ specialToggle.addEventListener("change", updateResults);
 todayButton.addEventListener("click", showTodayQuote);
 randomButton.addEventListener("click", showRandomQuote);
 quizButton.addEventListener("click", openQuizModal);
+topAboutAuthorsButton.addEventListener("click", openAuthorsModal);
 clearButton.addEventListener("click", clearFilters);
 heroPreviousButton.addEventListener("click", previousHeroQuote);
 heroNextButton.addEventListener("click", nextHeroQuote);
@@ -887,6 +901,7 @@ authorsCloseButton.addEventListener("click", closeAuthorsModal);
 quizCloseButton.addEventListener("click", closeQuizModal);
 quizNextButton.addEventListener("click", buildQuizQuestion);
 quizRestartButton.addEventListener("click", resetQuiz);
+backToTopButton.addEventListener("click", scrollBackToTop);
 authorMetadataSearch.addEventListener("input", renderAuthorMetadataCards);
 authorTypeFilter.addEventListener("change", renderAuthorMetadataCards);
 modalCloseButton.addEventListener("click", closeScreenshotModal);
@@ -919,6 +934,8 @@ document.addEventListener("keydown", (event) => {
     closeQuizModal();
   }
 });
+window.addEventListener("scroll", updateBackToTopButton, { passive: true });
 
 loadQuotes();
 loadAuthors();
+updateBackToTopButton();
